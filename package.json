@@ -5,8 +5,7 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test",
-    "prisma:gen": "prisma generate --schema=./libs/waweb/model/schema.prisma"
+    "test": "nx test"
   },
   "private": true,
   "dependencies": {
@@ -124,5 +123,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
   }
 }
