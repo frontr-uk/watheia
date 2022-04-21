@@ -1,4 +1,4 @@
-import { IPage, sourcebitDataClient, StackbitApi } from '@watheia/waweb.api.stackbit';
+import { IPage, sourcebitDataClient, StackbitApi } from '@watheia/api.stackbit';
 import Markdown from 'markdown-to-jsx';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';

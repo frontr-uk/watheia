@@ -35,27 +35,27 @@ check:
 	nx workspace-lint
 	stackbit validate
 
-test: waweb-api-stackbit
+test: api-stackbit
 	nx run-many --all --target test
 
-build: waweb-api-stackbit
+build: api-stackbit
 	nx run-many --all --target build --verbose
 
 build-home: home
 	@echo "DEPRECATED: use 'make home' instead"
 
-home: waweb-api-stackbit
+home: api-stackbit
 	nx build home --prod --verbose
 
 # Run all in parallel
-start: waweb-api-stackbit
+start: api-stackbit
 	nx run-many --all --target serve --parallel
 
-waweb-api-stackbit:
-	nx build waweb-api-stackbit
-	rm -rf node_modules/@watheia/waweb.api.stackbit
-	mkdir -p node_modules/@watheia/waweb.api.stackbit
-	cp -r dist/libs/waweb/api/stackbit/* node_modules/@watheia/waweb.api.stackbit/.
+api-stackbit:
+	nx build api-stackbit
+	rm -rf node_modules/@watheia/api.stackbit
+	mkdir -p node_modules/@watheia/api.stackbit
+	cp -r dist/libs/waweb/api/stackbit/* node_modules/@watheia/api.stackbit/.
 	echo '{}' > .sourcebit-nextjs-cache.json
 
 depcruise:
