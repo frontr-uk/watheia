@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@watheia/theme.styles.global": ["libs/assets/src/styles/index.css"],
+      "@watheia/utils": ["libs/utils/src/index.ts"],
+      "@watheia/waweb.api.stackbit": ["libs/waweb/api/stackbit/src/index.ts"],
+      "@watheia/waweb.app": ["libs/waweb/app/src/index.ts"],
+      "@watheia/waweb.auth": ["libs/waweb/auth/src/index.ts"],
+      "@watheia/waweb.config": ["libs/waweb/config/src/index.ts"],
+      "@watheia/waweb.layout": ["libs/waweb/layout/src/index.ts"],
+      "@watheia/waweb.message": ["libs/waweb/message/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
