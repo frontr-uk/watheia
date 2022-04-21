@@ -7,11 +7,11 @@ const { exclude: _, ...swcJestConfig } = JSON.parse(
 );
 
 module.exports = {
-  displayName: 'waweb-api-stackbit',
-  preset: '../../../../jest.preset.js',
+  displayName: 'api-stackbit',
+  preset: '../../../jest.preset.js',
   transform: {
     '^.+\\.[tj]s$': ['@swc/jest', swcJestConfig]
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../../../coverage/libs/waweb/api/stackbit'
+  coverageDirectory: '../../../coverage/libs/api/stackbit'
 };
