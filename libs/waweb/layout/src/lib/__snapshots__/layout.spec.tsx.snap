@@ -138,7 +138,7 @@ exports[`waweb.layout should render successfully 1`] = `
         class="app-messages absolute top-6 z-10 flex w-screen flex-col place-items-center justify-center"
       />
       <div
-        class="main px-2 py-6 sm:px-6 lg:px-8"
+        class="main"
       >
         <div
           class="full"
@@ -163,12 +163,7 @@ exports[`waweb.layout should render successfully 1`] = `
             class="footer-copyright"
             data-testid="waweb.layout/footer:copyright"
           >
-            Copyright © 
-            2022 
-            <br />
-            Watheia Labs, LLC.
-            <br />
-            All rights reserved.
+            © 2022 Watheia Labs, LLC.
           </div>
           <div
             class="footer-center-group"

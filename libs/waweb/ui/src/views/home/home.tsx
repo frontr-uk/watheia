@@ -1,12 +1,10 @@
 import BlogFeedSection from './blog-feed-section';
 import CtaSection from './cta-section';
-import { defaultNavigation, defaultPosts, defaultFeatures } from './data';
+import { defaultFeatures, defaultNavigation, defaultPosts } from './data';
 import FeaturedImageSection from './featured-image-section';
 import FeaturedItemsSection from './featured-items-section';
 import Header from './header';
 import HeroSection from './hero-section';
-import Footer from './footer';
-import TestimonialSection from './testimonial-section';
 import { FeatureItem, NavLink, Post } from './types';
 
 export interface HomeViewProps {
@@ -53,11 +51,11 @@ export default function HomeView({
         <HeroSection />
         <FeaturedImageSection />
         <FeaturedItemsSection features={features} />
-        <TestimonialSection />
+        {/* <TestimonialSection /> */}
         <BlogFeedSection posts={posts} />
         <CtaSection />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

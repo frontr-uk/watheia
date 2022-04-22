@@ -14,11 +14,13 @@
  * limitations under the License.
  */
 
+import { useConfig } from '@watheia/waweb.config';
 import cn from 'clsx';
 import Link from 'next/link';
 import styles from './footer.module.css';
 
 export default function Footer() {
+  const config = useConfig();
   return (
     <footer
       className={cn(styles['footer'], 'border-t border-dotted border-secondary bg-base-700')}
@@ -26,11 +28,7 @@ export default function Footer() {
     >
       <div className={styles['footer-legal']}>
         <div data-testid="waweb.layout/footer:copyright" className={styles['footer-copyright']}>
-          Copyright © {`${new Date().getFullYear()} `}
-          <br />
-          Watheia Labs, LLC.
-          <br />
-          All rights reserved.
+          {config.footer.copyrightText}
         </div>
         <div className={styles['footer-center-group']}>
           <p className={styles['footer-paragraph']}>
