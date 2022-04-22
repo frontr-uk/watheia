@@ -1,6 +1,10 @@
+import { findPageAtPath, StackbitApi } from '@watheia/api.stackbit';
 import Layout from '@watheia/waweb.layout';
+import { GetStaticProps } from 'next';
 
-export function Index() {
+export function IndexPage(props) {
+  console.log('IndexPage(props)', props);
+
   /*
    * Replace the elements below with your own.
    *
@@ -382,4 +386,11 @@ export function Index() {
   );
 }
 
-export default Index;
+export const getStaticProps: GetStaticProps = async () => {
+  const api = await StackbitApi.get();
+  const page = findPageAtPath(api, '/');
+  const props = { ...api.props, page };
+  return { props };
+};
+
+export default IndexPage;

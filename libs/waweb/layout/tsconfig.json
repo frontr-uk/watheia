@@ -3,7 +3,7 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "allowJs": true,
-    "esModuleInterop": true,
+    "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -11,7 +11,8 @@
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": false,
+    "importHelpers": false
   },
   "files": [],
   "include": [],

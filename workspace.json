@@ -3,7 +3,6 @@
   "projects": {
     "api-stackbit": "libs/api/stackbit",
     "assets": "libs/assets",
-    "base-ui-blog": "libs/base-ui/blog",
     "home": "apps/home",
     "home-e2e": "apps/home-e2e",
     "utils": "libs/utils",

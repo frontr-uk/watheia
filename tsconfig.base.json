@@ -16,7 +16,6 @@
     "baseUrl": ".",
     "paths": {
       "@watheia/api.stackbit": ["libs/api/stackbit/src/index.ts"],
-      "@watheia/base-ui.blog": ["libs/base-ui/blog/src/index.ts"],
       "@watheia/theme.styles.global": ["libs/assets/src/styles/index.css"],
       "@watheia/utils": ["libs/utils/src/index.ts"],
       "@watheia/waweb.app": ["libs/waweb/app/src/index.ts"],
