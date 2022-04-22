@@ -36,7 +36,7 @@ setup:
     paths:
       - node_modules/
 
-build: # This job runs in the build stage, which runs first.
+assemble: # This job runs in the build stage, which runs first.
   stage: build
   extends: .with_cache
   script: make build
@@ -44,14 +44,12 @@ build: # This job runs in the build stage, which runs first.
     untracked: false
     expire_in: 30 days
     paths:
-      - 'dist/apps/'
-      - 'dist/libs/'
+      - 'dist/'
 
-test: # This job runs in the test stage.
+check: # This job runs in the test stage.
   stage: test # It only starts when the job in the build stage completes successfully.
   extends: .with_cache
   script: make test
-  allow_failure: true
   artifacts:
     untracked: false
     expire_in: 30 days
