@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`watheia.base-ui/blog should without crashing 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <h1>
+      Welcome to BaseUiOrganismBlog!
+    </h1>
+  </div>
+</div>
+`;
