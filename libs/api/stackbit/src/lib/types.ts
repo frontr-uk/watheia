@@ -46,7 +46,7 @@ export interface Model {
 export interface MetaTag {
   readonly property: string;
   readonly content: string;
-  readonly format?: string;
+  readonly format: Maybe<string>;
 }
 
 export interface PaginationData {
@@ -64,15 +64,15 @@ export interface Model {
 }
 
 export interface SeoModel extends Model {
-  readonly metaTitle?: string;
-  readonly metaDescription?: string;
-  readonly titleSuffix?: string;
-  readonly socialImage?: string;
+  readonly metaTitle: Maybe<string>;
+  readonly metaDescription: Maybe<string>;
+  readonly titleSuffix: Maybe<string>;
+  readonly socialImage: Maybe<string>;
   readonly metaTags: Array<MetaTag>;
 }
 
 export interface MediaModel extends Model {
-  readonly alt?: string;
+  readonly alt: Maybe<string>;
   readonly src: string;
   readonly width: number;
   readonly height: number;
@@ -81,33 +81,28 @@ export interface MediaModel extends Model {
 export interface CategoryModel extends Model {
   readonly name: string;
   readonly slug: string;
-  readonly description?: string;
+  readonly description: Maybe<string>;
 }
 
 export interface PageModel extends Model {
+  readonly slug: Maybe<string>;
   readonly layout: string;
   readonly title: string;
-  /**
-   * @deprecated
-   */
-  readonly subtitle?: string;
-  readonly seo?: SeoModel;
-  readonly sections?: SectionModel[];
-  readonly markdown_content?: string;
+  readonly seo: Maybe<SeoModel>;
+  readonly sections: SectionModel[];
+  readonly content: Maybe<string>;
 }
 
 export interface ContentModel extends Model {
-  readonly elementId?: string;
+  readonly elementId: Maybe<string>;
+  readonly slot: Maybe<string>;
   readonly styles: Record<string, any>;
-  readonly type: string;
-  readonly className?: string;
 }
 
 export interface SectionModel extends ContentModel {
-  /**
-   * @deprecated
-   */
-  readonly colors: string;
+  title: Maybe<string>;
+  subtitle: Maybe<string>;
+  content: Maybe<string>;
 }
 
 export interface BadgeModel extends ContentModel {
@@ -115,26 +110,26 @@ export interface BadgeModel extends ContentModel {
 }
 
 export interface ActionModel extends ContentModel {
-  readonly label?: string;
-  readonly altText?: string;
+  readonly label: Maybe<string>;
+  readonly altText: Maybe<string>;
   readonly url: string;
-  readonly showIcon?: boolean;
+  readonly showIcon: Maybe<boolean>;
   readonly icon: string;
   readonly iconPosition: string;
   readonly style: string;
 }
 
 export interface LabeledNavModel extends ContentModel {
-  readonly label?: string;
+  readonly label: Maybe<string>;
   readonly text: string;
   readonly to: string;
-  readonly variant?: 'primary' | 'secondary' | 'neutral' | 'accent';
+  readonly variant: Maybe<'primary' | 'secondary' | 'neutral' | 'accent'>;
 }
 
 export interface CheckboxFormControlModel extends ContentModel {
   readonly name: string;
-  readonly label?: string;
-  readonly isRequired?: boolean;
+  readonly label: Maybe<string>;
+  readonly isRequired: Maybe<boolean>;
   readonly width: string;
 }
 
@@ -147,78 +142,59 @@ export interface ConfigModel extends Model {
 }
 
 export interface ContactSection extends SectionModel {
-  readonly colors: string;
   readonly backgroundSize: string;
-  readonly title?: string;
-  readonly text?: string;
-  readonly form?: FormBlockModel;
-  readonly media?: ImageBlockModel | VideoBlockModel;
+  readonly form: Maybe<FormBlockModel>;
+  readonly media: Maybe<ImageBlockModel | VideoBlockModel>;
 }
 
 export interface CtaSection extends SectionModel {
-  readonly colors: string;
   readonly backgroundSize: string;
-  readonly title?: string;
-  readonly text?: string;
   readonly actions: Array<ActionModel | LinkModel>;
-  readonly backgroundImage?: ImageBlockModel;
+  readonly backgroundImage: Maybe<ImageBlockModel>;
 }
 
 export interface EmailFormControlModel extends ContentModel {
-  readonly name?: string;
-  readonly label?: string;
-  readonly hideLabel?: boolean;
-  readonly placeholder?: string;
-  readonly isRequired?: boolean;
+  readonly name: Maybe<string>;
+  readonly label: Maybe<string>;
+  readonly hideLabel: Maybe<boolean>;
+  readonly placeholder: Maybe<string>;
+  readonly isRequired: Maybe<boolean>;
   readonly width: string;
 }
 
 export interface FeatureHighlightSection extends SectionModel {
-  readonly colors: string;
   readonly backgroundSize: string;
-  readonly title?: string;
-  readonly subtitle?: string;
-  readonly badge?: BadgeModel;
-  readonly text?: string;
+  readonly badge: Maybe<BadgeModel>;
   readonly actions: Array<ActionModel | LinkModel>;
-  readonly media?: ImageBlockModel | VideoBlockModel;
+  readonly media: Maybe<ImageBlockModel | VideoBlockModel>;
 }
 
 export interface FeaturedItemModel extends ContentModel {
-  readonly elementId?: string;
-  readonly title?: string;
-  readonly subtitle?: string;
-  readonly text?: string;
-  readonly featuredImage?: ImageBlockModel;
+  readonly title: string;
+  readonly subtitle: Maybe<string>;
+  readonly text: Maybe<string>;
+  readonly featuredImage: Maybe<MediaModel>;
   readonly actions: Array<ActionModel | LinkModel>;
 }
 
 export interface FeaturedItemsSection extends SectionModel {
-  readonly title?: string;
-  readonly subtitle?: string;
   readonly items: Array<FeaturedItemModel>;
   readonly actions: Array<ActionModel | LinkModel>;
-  readonly columns?: number;
-  readonly enableHover?: boolean;
+  readonly columns: Maybe<number>;
+  readonly enableHover: Maybe<boolean>;
 }
 
 export interface FeaturedPeopleSection extends SectionModel {
   readonly variant: string;
-  readonly colors: string;
-  readonly title?: string;
-  readonly subtitle?: string;
   readonly actions: Array<ActionModel | LinkModel>;
   readonly people: Array<PersonModel>;
 }
 
-export interface FeaturedPostsSectionModel extends PostFeedSectionModel {
-  readonly title?: string;
-  readonly subtitle?: string;
-}
+export type FeaturedPostsSectionModel = PostFeedSectionModel;
 
 export interface FooterModel extends ContentModel {
-  readonly logo?: MediaModel;
-  readonly copyrightText?: string;
+  readonly logo: Maybe<MediaModel>;
+  readonly copyrightText: string;
   readonly legalLinks: Array<ActionModel | LinkModel>;
 }
 
@@ -231,53 +207,47 @@ export interface FormBlockModel extends ContentModel {
     | CheckboxFormControlModel
     | SelectFormControlModel
   >;
-  readonly submitLabel?: string;
-  readonly elementId: string;
-  readonly action?: string;
-  readonly destination?: string;
+  readonly submitLabel: Maybe<string>;
+  readonly action: string;
+  readonly destination: Maybe<string>;
 }
 
 export interface HeaderModel extends ContentModel {
-  readonly logo?: MediaModel;
+  readonly logo: Maybe<MediaModel>;
   readonly primaryLinks: LinkModel[];
 }
 
 export interface HeroSectionModel extends SectionModel {
-  readonly colors: string;
-  readonly title?: string;
-  readonly subtitle?: string;
-  readonly badge?: BadgeModel;
-  readonly content?: string;
+  readonly badge: Maybe<BadgeModel>;
   readonly actions: Array<ActionModel | LinkModel>;
-  readonly media?: ImageBlockModel | VideoBlockModel;
+  readonly media: Maybe<ImageBlockModel | VideoBlockModel>;
 }
 
 export interface ImageBlockModel extends ContentModel {
-  readonly caption?: string;
+  readonly caption: Maybe<string>;
+  readonly opacity: Maybe<number>;
   readonly media: MediaModel;
 }
 
 export interface LinkModel extends ContentModel {
-  readonly label?: string;
-  readonly altText?: string;
+  readonly label: Maybe<string>;
+  readonly altText: Maybe<string>;
   readonly url: string;
 }
 
 export interface MediaGallerySection extends SectionModel {
-  readonly title?: string;
-  readonly subtitle?: string;
   readonly images: Array<ImageBlockModel>;
-  readonly spacing?: number;
-  readonly columns?: number;
+  readonly spacing: Maybe<number>;
+  readonly columns: Maybe<number>;
   readonly aspectRatio: string;
-  readonly imageSizePx?: number;
-  readonly showCaption?: boolean;
-  readonly enableHover?: boolean;
+  readonly imageSizePx: Maybe<number>;
+  readonly showCaption: Maybe<boolean>;
+  readonly enableHover: Maybe<boolean>;
 }
 
 export interface MetaTagModel extends Model {
   readonly property: string;
-  readonly content?: string;
+  readonly content: Maybe<string>;
 }
 
 export interface PageLayout extends PageModel {
@@ -285,15 +255,13 @@ export interface PageLayout extends PageModel {
 }
 
 export interface PostFeedSectionModel extends SectionModel {
-  readonly title?: string;
-  readonly subtitle?: string;
-  readonly showDate?: boolean;
-  readonly showAuthor?: boolean;
-  readonly showExcerpt?: boolean;
+  readonly showDate: Maybe<boolean>;
+  readonly showAuthor: Maybe<boolean>;
+  readonly showExcerpt: Maybe<boolean>;
   readonly variant: string;
   readonly actions: Array<ActionModel | LinkModel>;
   readonly posts: Array<PostLayoutModel>;
-  readonly annotatePosts?: boolean;
+  readonly annotatePosts: Maybe<boolean>;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
@@ -301,18 +269,18 @@ export interface PagedPostsSectionModel extends PostFeedSectionModel {}
 
 export interface PersonModel extends Model {
   readonly firstName: string;
-  readonly lastName?: string;
+  readonly lastName: Maybe<string>;
   readonly slug: string;
-  readonly role?: string;
-  readonly bio?: string;
-  readonly avatar?: MediaModel;
+  readonly role: Maybe<string>;
+  readonly bio: Maybe<string>;
+  readonly avatar: Maybe<MediaModel>;
 }
 
 export type PaginatedPersonModel = PaginatedPostFeed;
 
 export interface PostFeedLayoutModel extends PageModel {
-  readonly numOfPostsPerPage?: number;
-  readonly postFeed?: PostFeedSectionModel;
+  readonly numOfPostsPerPage: Maybe<number>;
+  readonly postFeed: Maybe<PostFeedSectionModel>;
   readonly topSections: Array<SectionModel>;
   readonly bottomSections: Array<SectionModel>;
 }
@@ -325,8 +293,8 @@ export interface PostLayoutModel extends PageModel {
   readonly date: string;
   readonly author: PersonModel;
   readonly category: CategoryModel;
-  readonly excerpt?: string;
-  readonly featuredImage?: ImageBlockModel;
+  readonly excerpt: Maybe<string>;
+  readonly featuredImage: Maybe<ImageBlockModel>;
   readonly bottomSections: Array<SectionModel>;
 }
 
@@ -336,27 +304,25 @@ export interface DocumentLayoutModel extends PageModel {
 
 export interface QuoteSection extends SectionModel {
   readonly quote: string;
-  readonly name?: string;
-  readonly title?: string;
-  readonly backgroundImage?: ImageBlockModel;
+  readonly name: Maybe<string>;
+  readonly backgroundImage: Maybe<ImageBlockModel>;
 }
 
 export interface RecentPostsSection extends PostFeedSectionModel {
-  readonly recentCount?: number;
+  readonly recentCount: Maybe<number>;
 }
 
 export interface SelectFormControlModel extends ContentModel {
   readonly name: string;
-  readonly label?: string;
-  readonly hideLabel?: boolean;
-  readonly defaultValue?: string;
+  readonly label: Maybe<string>;
+  readonly hideLabel: Maybe<boolean>;
+  readonly defaultValue: Maybe<string>;
   readonly options: string;
-  readonly isRequired?: boolean;
+  readonly isRequired: Maybe<boolean>;
   readonly width: string;
 }
 
 export interface FaqSection extends SectionModel {
-  readonly content?: string;
   readonly actions: Array<ActionModel | LinkModel>;
   readonly items: Array<FaqItemModel>;
 }
@@ -368,48 +334,45 @@ export interface FaqItemModel extends ContentModel {
 
 export interface TestimonialModel extends ContentModel {
   readonly quote: string;
-  readonly name?: string;
-  readonly title?: string;
-  readonly image?: ImageBlockModel;
+  readonly name: Maybe<string>;
+  readonly title: Maybe<string>;
+  readonly image: Maybe<ImageBlockModel>;
 }
 
 export interface TestimonialsSection extends SectionModel {
-  readonly colors: string;
   readonly variant: string;
-  readonly title?: string;
-  readonly subtitle?: string;
   readonly testimonials: Array<TestimonialModel>;
 }
 
 export interface TextFormControlModel extends ContentModel {
   readonly name: string;
-  readonly label?: string;
-  readonly hideLabel?: boolean;
-  readonly placeholder?: string;
-  readonly isRequired?: boolean;
+  readonly label: Maybe<string>;
+  readonly hideLabel: Maybe<boolean>;
+  readonly placeholder: Maybe<string>;
+  readonly isRequired: Maybe<boolean>;
   readonly width: string;
 }
 
 export interface TextBlockModel extends ContentModel {
   readonly colors: string;
-  readonly content?: string;
+  readonly content: Maybe<string>;
 }
 
 export interface TextareaFormControlModel extends ContentModel {
   readonly name: string;
-  readonly label?: string;
-  readonly hideLabel?: boolean;
-  readonly placeholder?: string;
-  readonly isRequired?: boolean;
+  readonly label: Maybe<string>;
+  readonly hideLabel: Maybe<boolean>;
+  readonly placeholder: Maybe<string>;
+  readonly isRequired: Maybe<boolean>;
   readonly width: string;
 }
 
 export interface VideoBlockModel extends ContentModel {
-  readonly title?: string;
+  readonly title: Maybe<string>;
   readonly url: string;
-  readonly autoplay?: boolean;
-  readonly loop?: boolean;
-  readonly muted?: boolean;
-  readonly controls?: boolean;
+  readonly autoplay: Maybe<boolean>;
+  readonly loop: Maybe<boolean>;
+  readonly muted: Maybe<boolean>;
+  readonly controls: Maybe<boolean>;
   readonly aspectRatio: string;
 }

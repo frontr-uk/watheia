@@ -6,9 +6,7 @@
   "targets": {
     "build": {
       "executor": "@nrwl/web:rollup",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/waweb/app",
         "tsConfig": "libs/waweb/app/tsconfig.lib.json",
@@ -38,20 +36,14 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "libs/waweb/app/**/*.{ts,tsx,js,jsx}"
-        ]
+        "lintFilePatterns": ["libs/waweb/app/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/waweb/app"
-      ],
+      "outputs": ["coverage/libs/waweb/app"],
       "options": {
         "jestConfig": "libs/waweb/app/jest.config.js",
         "passWithNoTests": true

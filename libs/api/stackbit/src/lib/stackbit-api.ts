@@ -1,7 +1,6 @@
-import { Model, PageModel as Page } from './types';
-import sourcebitDataClient from './sourcebit-data-client';
 import { SourcebitDataCache } from 'sourcebit-target-next';
-// import { not } from 'lodash';
+import sourcebitDataClient from './sourcebit-data-client';
+import { Model, PageModel as Page } from './types';
 
 export const matchPageObject = (it: Model) => it.__metadata.modelType === 'page';
 
@@ -29,7 +28,9 @@ export class StackbitApi {
 
   static async get(): Promise<StackbitApi> {
     if (!StackbitApi._singleton) {
-      StackbitApi._singleton = new StackbitApi(await sourcebitDataClient.getData());
+      const cache = await sourcebitDataClient.getData();
+      const { props = {}, objects = [], pages = [] } = cache;
+      StackbitApi._singleton = new StackbitApi({ props, objects, pages });
     }
 
     return StackbitApi._singleton;
