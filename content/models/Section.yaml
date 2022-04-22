@@ -15,6 +15,12 @@ fields:
     type: string
     label: Subtitle
     default: The section subtitle
+  - name: slot
+    type: string
+    group: settings
+    label: Layout slot
+    description: Where to place the element in the layout
+    default: null
   - name: elementId
     type: string
     group: settings

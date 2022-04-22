@@ -1,8 +1,7 @@
-import { IPage, sourcebitDataClient, StackbitApi } from '@watheia/api.stackbit';
-import Markdown from 'markdown-to-jsx';
-import { GetStaticPaths, GetStaticProps } from 'next';
+import { findPageAtPath, StackbitApi } from '@watheia/api.stackbit';
+// import Markdown from 'markdown-to-jsx';
+import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next';
 import Head from 'next/head';
-import { InferGetStaticPropsType } from 'next';
 
 // const renderSection = (model, key) => renderElement(model, { key });
 
@@ -18,13 +17,13 @@ const DynamicPage = (props: DynamicPageProps) => {
 
       <div data-sb-object-id={page.__metadata.id}>
         {/* {page.sections && page.sections.map(renderSection)} */}
-        {page.content && <Markdown data-sb-field-path=".content">{page.content}</Markdown>}
+        {page.content}
       </div>
 
       <div className="page-footer">
         <div className="footer-container" data-sb-field-path="content/data/config.json:footer">
           <div data-sb-field-path=".copyright" className="footer-content">
-            <Markdown>{site.footer.copyright}</Markdown>
+            {site.footer.copyright}
           </div>
         </div>
       </div>
@@ -33,29 +32,16 @@ const DynamicPage = (props: DynamicPageProps) => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  // instantiate api from current data cache
-  const api = new StackbitApi(await sourcebitDataClient.getData());
-
-  // build the current path from slug params
-  const urlPath = params.slug
-    ? typeof params.slug === 'string'
-      ? params['slug']
-      : '/' + params['slug'].join('/')
-    : '/';
-
-  // grab the global site context model
-  const site = api.getProps()['site'] ?? null;
-
-  // find the page model matching the computed urlPath
-  const page = api.getPages().find((it: IPage) => it.__metadata['urlPath'] === urlPath) ?? null;
-
-  // bag it all up and send it over the wire as JSON data
-  return { props: { urlPath, page, site } };
+  // grab the global api instance
+  const api = await StackbitApi.get();
+  const page = findPageAtPath(api, params.slug);
+  const props = { ...api.props, page };
+  return { props };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const api = new StackbitApi(await sourcebitDataClient.getData());
-  const paths = api.getPages().map((it) => it.__metadata['urlPath'] as string);
+  const api = await StackbitApi.get();
+  const paths = api.pages.map((it) => it.slug).filter(Boolean);
   return { paths, fallback: false };
 };
 

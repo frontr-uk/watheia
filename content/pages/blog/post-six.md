@@ -1,4 +1,5 @@
 ---
+slug: /blog/smart-strategies-for-growing-your-business
 title: Smart Strategies for Growing Your Business
 date: '2021-10-26'
 author: content/data/team/aaron-r-miller.json

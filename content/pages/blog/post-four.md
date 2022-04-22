@@ -1,4 +1,5 @@
 ---
+slug: /blog/convert-commute-time-to-family-time
 title: Convert commute time to family time
 layout: PostLayout
 date: '2021-11-03'

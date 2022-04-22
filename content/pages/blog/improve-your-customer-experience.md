@@ -1,6 +1,7 @@
 ---
+slug: /blog/improve-your-customer-experience
 title: Improve your customer experience
-date: '2021-01-05'
+date: '2022-01-05'
 author: content/data/team/aaron-r-miller.json
 excerpt: Quo facilis culpa ut illo dolor quo placeat consequatur. A consequatur facilis aut voluptas dolores qui aperiam laborum ut ullam consequatur ut quia consequatur cum inventore voluptas sed impedit asperiores!
 featuredImage:

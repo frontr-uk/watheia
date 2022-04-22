@@ -1,4 +1,5 @@
 ---
+slug: /blog/surround-yourself-with-the-right-people
 title: Surround Yourself With the Right People
 layout: PostLayout
 date: '2021-07-01'

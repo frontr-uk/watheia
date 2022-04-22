@@ -1,4 +1,5 @@
 ---
+slug: /blog/how-to-use-search-engine-optimization
 title: The Most Creative Ways Our Customers Use Our Products
 date: '2020-12-20'
 author: content/data/team/aaron-r-miller.json

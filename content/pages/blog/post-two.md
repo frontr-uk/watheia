@@ -1,7 +1,8 @@
 ---
+slug: /blog/a-work-bubbles
 title: A Work Bubbles
 layout: PostLayout
-date: '2021-07-01'
+date: '2022-07-01'
 author: content/data/team/aaron-r-miller.json
 excerpt: >-
   Sed in facilisis dui. Nulla molestie risus in mi dapibus, eget porta lorem

@@ -8,6 +8,10 @@ fields:
     label: Title
     default: This is a new page
     required: true
+  - name: slug
+    type: string
+    label: Page slug
+    default: null
   - name: subtitle
     type: string
     label: Deprecated, use PageHeading block

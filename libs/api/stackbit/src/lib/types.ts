@@ -1,19 +1,4 @@
-/**
- * Metadata is injected into each model instance upon
- * instantiation, and contains information pertaining
- * to the model AST.
- */
-export interface Metadata extends Record<string, unknown> {
-  readonly id: string;
-  readonly source: string;
-  readonly modelType: string;
-  readonly modelName: string;
-  readonly modelLabel: string;
-  readonly relSourcePath: string;
-  readonly relProjectPath: string;
-  readonly sourceName: string;
-  readonly sourcePath: string;
-}
+import { Metadata } from './Metadata';
 
 /**
  * Base type for all stackbit models.
@@ -29,7 +14,9 @@ export interface IModel {
 export interface IPage extends IModel {
   readonly layout: string;
   readonly title: string;
+  readonly slug: string | null;
   readonly content: string | null;
+  readonly sections: ISectionElement[];
 }
 
 /**
@@ -51,6 +38,8 @@ export interface IPage extends IModel {
  * A trait applied to all section elements
  */
 export interface ISectionElement extends IModel {
+  readonly name: string | null;
+  readonly slot: string;
   readonly heading: string | null;
   readonly subheading: string | null;
 }

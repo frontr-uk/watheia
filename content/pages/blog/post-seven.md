@@ -1,6 +1,7 @@
 ---
+slug: /blog/a-day-in-the-life-of-our-development-team
 title: A Day in the Life of Our Development Team
-date: '2020-01-15'
+date: '2022-01-15'
 author: content/data/team/aaron-r-miller.json
 excerpt: Vel repellat dolores ut unde voluptatum ut optio voluptates est aliquid. Ut earum corporis id Quis esse est galisum officiis accusantium enim et asperiores dolore.
 featuredImage:

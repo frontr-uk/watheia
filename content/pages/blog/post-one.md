@@ -1,4 +1,5 @@
 ---
+slug: /blog/virtual-benefits
 title: Virtual benefits
 layout: PostLayout
 date: '2021-06-28'
