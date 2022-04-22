@@ -1,6 +1,7 @@
 ---
+slug: /blog/what-great-startups-do-differently
 title: What Great Startups Do Differently
-date: '2020-09-26'
+date: '2021-09-26'
 excerpt: >-
   Ut expedita iure et iste placeat id consequatur veritatis et saepe voluptas
   non voluptas nesciunt sed voluptate rerum. Ea deleniti unde et exercitationem

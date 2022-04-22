@@ -19,13 +19,13 @@ import ViewSource from './view-source';
 export interface LayoutProps {
   useBackdrop?: boolean;
   hideNav?: boolean;
-  className?: string;
+  usePadding?: boolean;
   layoutStyles?: CSSProperties;
   children: boolean | ReactChild | ReactFragment | ReactPortal | null;
 }
 
 export default function Layout({
-  className = 'px-2 py-6 sm:px-6 lg:px-8',
+  usePadding = false,
   layoutStyles = {},
   ...props
 }: LayoutProps) {
@@ -70,7 +70,10 @@ export default function Layout({
         {!props.hideNav && config.header && <Header {...config.header} />}
         <div className={styles['page']}>
           <MessageList messages={messages} />
-          <div className={clsx(styles['main'], className)} style={layoutStyles}>
+          <div
+            className={clsx(styles['main'], usePadding && 'px-2 py-6 sm:px-6 lg:px-8')}
+            style={layoutStyles}
+          >
             <div className={clsx(styles['full'])}>
               <SkipNavContent />
               {props.children}

@@ -1,5 +1,4 @@
-import { SSRProvider } from '@react-aria/ssr';
-import { Provider, defaultTheme } from '@adobe/react-spectrum';
+import { Provider, defaultTheme, SSRProvider } from '@adobe/react-spectrum';
 import { AuthProvider } from '@watheia/waweb.auth';
 import { MessageProvider } from '@watheia/waweb.message';
 import { AppProps } from 'next/app';

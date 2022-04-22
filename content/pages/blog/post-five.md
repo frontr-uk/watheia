@@ -1,4 +1,5 @@
 ---
+slug: /blog/our-biggest-failure-and-how-we-overcome-it
 title: Our Biggest Failure – And How We’ve Overcome It
 date: '2021-10-26'
 author: content/data/team/aaron-r-miller.json

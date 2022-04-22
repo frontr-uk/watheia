@@ -1,6 +1,7 @@
 ---
+slug: /blog/the-elements-of-great-workplace-design
 title: The Elements of Great Workplace Design
-date: '2021-02-12'
+date: '2022-02-12'
 author: content/data/team/aaron-r-miller.json
 excerpt: Nam voluptate maxime et magni provident aut repudiandae enim sit esse praesentium. Ut tenetur necessitatibus ut neque nemo ut iusto voluptates et veniam error sit vitae architecto aut suscipit sapiente.
 featuredImage:

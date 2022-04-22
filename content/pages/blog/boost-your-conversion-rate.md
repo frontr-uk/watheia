@@ -1,4 +1,5 @@
 ---
+slug: /blog/boost-your-conversion-rate
 title: The Top Ten Lessons We’ve Learned Since Our Initial Launch
 date: '2021-01-15'
 author: content/data/team/aaron-r-miller.json
