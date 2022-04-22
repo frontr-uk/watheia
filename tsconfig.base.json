@@ -22,7 +22,8 @@
       "@watheia/waweb.auth": ["libs/waweb/auth/src/index.ts"],
       "@watheia/waweb.config": ["libs/waweb/config/src/index.ts"],
       "@watheia/waweb.layout": ["libs/waweb/layout/src/index.ts"],
-      "@watheia/waweb.message": ["libs/waweb/message/src/index.ts"]
+      "@watheia/waweb.message": ["libs/waweb/message/src/index.ts"],
+      "@watheia/waweb.ui": ["libs/waweb/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

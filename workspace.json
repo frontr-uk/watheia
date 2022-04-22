@@ -10,6 +10,7 @@
     "waweb-auth": "libs/waweb/auth",
     "waweb-config": "libs/waweb/config",
     "waweb-layout": "libs/waweb/layout",
-    "waweb-message": "libs/waweb/message"
+    "waweb-message": "libs/waweb/message",
+    "waweb-ui": "libs/waweb/ui"
   }
 }

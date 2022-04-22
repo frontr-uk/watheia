@@ -1842,6 +1842,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@headlessui/react@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "@headlessui/react@npm:1.5.0"
+  peerDependencies:
+    react: ^16 || ^17 || ^18
+    react-dom: ^16 || ^17 || ^18
+  checksum: e3373dfb73936950d659a87718fb9fdedc599b344b30cb0d8b1ef0a2ec13d6f405c653fa51284236788658840ece82c6a8538a5a5931e595274e9590b2020079
+  languageName: node
+  linkType: hard
+
 "@humanwhocodes/config-array@npm:^0.9.2":
   version: 0.9.5
   resolution: "@humanwhocodes/config-array@npm:0.9.5::__archiveUrl=https%3A%2F%2Fregistry.npmjs.org%2F%40humanwhocodes%2Fconfig-array%2F-%2Fconfig-array-0.9.5.tgz"
@@ -22020,6 +22030,7 @@ __metadata:
     "@babel/core": ^7.17.9
     "@babel/preset-env": ^7.16.11
     "@builder.io/partytown": ^0.5.2
+    "@headlessui/react": ^1.5.0
     "@next/bundle-analyzer": ^12.1.5
     "@nrwl/cli": 14.0.1
     "@nrwl/cypress": 14.0.1
