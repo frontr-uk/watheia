@@ -1,13 +1,13 @@
-import { IModel, IPage } from './types';
+import { Model, PageModel as Page } from './types';
 import sourcebitDataClient from './sourcebit-data-client';
 import { SourcebitDataCache } from 'sourcebit-target-next';
 // import { not } from 'lodash';
 
-export const matchPageObject = (it: IModel) => it.__metadata.modelType === 'page';
+export const matchPageObject = (it: Model) => it.__metadata.modelType === 'page';
 
-export type ObjectFilter = (value: IModel, index?: number, array?: IModel[]) => value is IModel;
+export type ObjectFilter = (value: Model, index?: number, array?: Model[]) => value is Model;
 
-export type PageFilter = (value: IPage, index?: number, array?: IPage[]) => value is IPage;
+export type PageFilter = (value: Page, index?: number, array?: Page[]) => value is Page;
 
 /**
  * Filter predicate to match page objects
@@ -15,14 +15,14 @@ export type PageFilter = (value: IPage, index?: number, array?: IPage[]) => valu
  * @param model
  * @returns
  */
-export const matchPages = (model: IModel) => model.__metadata.modelName === 'Page';
+export const matchPages = (model: Model) => model.__metadata.modelName === 'Page';
 
 /**
  * Wrapper API to sourcebit data cache
  */
 export class StackbitApi {
-  private readonly _objects: IModel[];
-  private readonly _pages: IPage[];
+  private readonly _objects: Model[];
+  private readonly _pages: Page[];
   private readonly _props: Record<string, unknown>;
 
   private static _singleton: StackbitApi;
@@ -57,7 +57,7 @@ export class StackbitApi {
    * Contains a list of all page objects
    * @returns
    */
-  get objects(): IModel[] {
+  get objects(): Model[] {
     return this._objects;
   }
 
@@ -65,9 +65,9 @@ export class StackbitApi {
    * TODO We need to figure out why `pages` field in stackbit
    *      cache always resolves to `[]`. Until then, we must
    *      manually perform the same logic here.
-   * @returns {IPage[]}
+   * @returns {Page[]}
    */
-  get pages(): IPage[] {
+  get pages(): Page[] {
     return this._pages;
   }
 
@@ -87,7 +87,7 @@ export class StackbitApi {
    * if missing.
    *
    * @param {string} type Name of the model
-   * @returns {IModel} First matching object
+   * @returns {Model} First matching object
    */
   // modelByType<T extends IModel>(type: string): T {
   //   const model = this.getObjects().find((it) => it.type === type) as T;

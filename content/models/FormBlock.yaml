@@ -67,7 +67,7 @@ fields:
     name: action
     group: settings
     label: Action (form submission URL)
-    default: /.netlify/functions/submission_created
+    default: /api/post
   - type: string
     name: destination
     label: Destination (email to redirect responses)

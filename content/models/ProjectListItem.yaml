@@ -24,7 +24,7 @@ fields:
         - Action
         - Link
     default:
-      - type: Link
+      - type: Action
         label: Apply
         url: /
         showIcon: true

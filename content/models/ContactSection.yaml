@@ -40,7 +40,7 @@ fields:
     default:
       type: FormBlock
       elementId: contact-form
-      action: /.netlify/functions/submission_created
+      action: /api/post
       destination: ''
       fields:
         - type: TextFormControl
