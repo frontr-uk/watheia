@@ -36,7 +36,7 @@ check:
 	stackbit validate
 
 test: api-stackbit
-	nx run-many --all --target test
+	nx run-many --all --target test --verbose --coverage -u
 
 build: api-stackbit
 	nx run-many --all --target build --verbose

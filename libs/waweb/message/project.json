@@ -6,19 +6,13 @@
   "targets": {
     "build": {
       "executor": "@nrwl/web:rollup",
-      "outputs": [
-        "{options.outputPath}"
-      ],
+      "outputs": ["{options.outputPath}"],
       "options": {
         "outputPath": "dist/libs/waweb/message",
         "tsConfig": "libs/waweb/message/tsconfig.lib.json",
         "project": "libs/waweb/message/package.json",
         "entryFile": "libs/waweb/message/src/index.ts",
-        "external": [
-          "react/jsx-runtime",
-          "@adobe/react-spectrum",
-          "clsx"
-        ],
+        "external": ["react/jsx-runtime", "@adobe/react-spectrum", "clsx"],
         "rollupConfig": "@nrwl/react/plugins/bundle-rollup",
         "compiler": "babel",
         "assets": [
@@ -32,20 +26,14 @@
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "libs/waweb/message/**/*.{ts,tsx,js,jsx}"
-        ]
+        "lintFilePatterns": ["libs/waweb/message/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/waweb/message"
-      ],
+      "outputs": ["coverage/libs/waweb/message"],
       "options": {
         "jestConfig": "libs/waweb/message/jest.config.js",
         "passWithNoTests": true

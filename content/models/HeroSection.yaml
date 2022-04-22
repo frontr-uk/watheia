@@ -41,6 +41,7 @@ fields:
       type: model
       models:
         - Action
+        - Link
     default:
       - type: Action
         label: Get Started
