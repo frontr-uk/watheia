@@ -15,39 +15,39 @@
   --wa-border-color: #{$d20};
   --wa-border-color-heavy: #{$d30};
   --wa-border-color-light: #{$d15};
-  --wa-border-color-lightest: #{$d10};
+  --wa-border-color-lightest: hsl(var(--b3));
 
   // -- accent -- //
-  --wa-accent-color: #{$p50};
-  --wa-accent-heavy: #{$p60};
+  --wa-accent-color: hsl(var(--a));
+  --wa-accent-heavy: hsl(var(--af));
   --wa-accent-light: #{$p40};
-  --wa-accent-text: #{$p50};
-  --wa-accent-text-heavy: #{$p60};
-  --wa-text-on-accent: #{$w10};
-  --wa-accent-bg: #{$p20};
-  --wa-accent-bg-heavy: #{$p30};
+  --wa-accent-text: hsl(var(--a));
+  --wa-accent-text-heavy: hsl(var(--af));
+  --wa-text-on-accent: hsl(var(--b1));
+  --wa-accent-bg: #{$g20};
+  --wa-accent-bg-heavy: #{$g30};
 
   // -- background -- //
   // // higher number = more important, and 'closer' to the user.
-  // --wa-bg-01: #{$w10};
-  // --wa-bg-03: #{$w20};
-  // --wa-bg-05: #{$d10};
+  // --wa-bg-01: hsl(var(--b1));
+  // --wa-bg-03: hsl(var(--b2));
+  // --wa-bg-05: hsl(var(--b3));
   // --wa-bg-07: #{$d15};
   // --wa-bg-09: #{$d20};
   // --wa-bg-11: #{$d30};
 
   // intractable item
-  --wa-bg-color: #{$w10}; // when resting
-  --wa-bg-heavy: #{$w20}; // when hovering, focus
-  --wa-bg-heaviest: #{$d10}; // when active (clicked)
+  --wa-bg-color: hsl(var(--b1)); // when resting
+  --wa-bg-heavy: hsl(var(--b2)); // when hovering, focus
+  --wa-bg-heaviest: hsl(var(--b3)); // when active (clicked)
 
-  --wa-bg-bedrock: #{$w10}; // i.e. <body/> background
-  --wa-bg-navigation: #{$w20}; // i.e. <body/> background
-  --wa-bg-overlay: #{$w10}; // e.g. button, input, etc
-  --wa-bg-modal: #{$w10}; // e.g. button, input, etc
-  --wa-bg-tooltip: #{$w10}; // e.g. button, input, etc
-  --wa-bg-tooltip-heavy: #{$w20};
-  --wa-bg-dent: #{$w20};
+  --wa-bg-bedrock: hsl(var(--b1)); // i.e. <body/> background
+  --wa-bg-navigation: hsl(var(--b2)); // i.e. <body/> background
+  --wa-bg-overlay: hsl(var(--b1)); // e.g. button, input, etc
+  --wa-bg-modal: hsl(var(--b1)); // e.g. button, input, etc
+  --wa-bg-tooltip: hsl(var(--b1)); // e.g. button, input, etc
+  --wa-bg-tooltip-heavy: hsl(var(--b2));
+  --wa-bg-dent: hsl(var(--b2));
 
   // -- error -- //
   // might replace with 'error' theme

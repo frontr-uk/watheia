@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { HTMLAttributes } from 'react';
 import classNames from 'clsx';
 
 import { headingFontSize, textFontSize } from '../size-definition';
@@ -20,7 +20,7 @@ import texts from './texts.module.scss';
  * </Theme>
  */
 
-export function Theme(props: React.HTMLAttributes<HTMLDivElement>) {
+export function Theme(props: HTMLAttributes<HTMLDivElement>) {
   return (
     <div
       {...props}
@@ -32,7 +32,7 @@ export function Theme(props: React.HTMLAttributes<HTMLDivElement>) {
         primaryPalette,
         brands,
         headingMargins,
-        texts.defaults,
+        texts['defaults'],
         props.className
       )}
     ></div>

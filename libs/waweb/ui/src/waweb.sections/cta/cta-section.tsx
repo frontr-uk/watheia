@@ -38,13 +38,13 @@ export function CtaSection(props: CtaProps) {
       data-bit-id="waweb.sections/cta"
     >
       <div>
-        <H2 size={PossibleSizes.xs}>Ready to try Bit?</H2>
+        <H2 size={PossibleSizes.xs}>Start your project today!</H2>
         <Paragraph size={PossibleSizes.lg}>
           Empower your team to build faster together.
         </Paragraph>
       </div>
       <Link href="/signup">
-        <Button importance="cta">Start for free</Button>
+        <Button importance="cta">Get free consultation</Button>
       </Link>
     </Grid>
   );

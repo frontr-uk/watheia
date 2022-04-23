@@ -2,12 +2,12 @@
 
 // brand colors
 .primary {
-  --wa-accent-color: #{$p50};
-  --wa-accent-heavy: #{$p60};
-  --wa-accent-light: #{$p40};
-  --wa-accent-text: #{$p50};
-  --wa-accent-text-heavy: #{$p60};
-  --wa-text-on-accent: #{$w10};
+  --wa-accent-color: hsl(var(--a));
+  --wa-accent-heavy: #025151;
+  --wa-accent-light: #42fbfb;
+  --wa-accent-text: hsl(var(--a));
+  --wa-accent-text-heavy: #025151;
+  --wa-text-on-accent: hsl(var(--ac));
   --wa-accent-bg: #{$p20};
   --wa-accent-bg-heavy: #{$p30};
 }
