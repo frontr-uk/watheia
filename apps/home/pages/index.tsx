@@ -1,15 +1,21 @@
 import { findPageAtPath, StackbitApi } from '@watheia/api.stackbit';
 import Layout from '@watheia/waweb.layout';
-import { HomeView } from '@watheia/waweb.ui';
-import { GetStaticProps } from 'next';
+import { useView, View } from '@watheia/waweb.ui';
+import { GetStaticProps, InferGetStaticPropsType } from 'next';
 
-export function IndexPage(props) {
-  // console.log('IndexPage(props)', props);
-  return (
-    <Layout>
-      <HomeView />
-    </Layout>
-  );
+type PageProps = InferGetStaticPropsType<typeof getStaticProps>;
+
+export function IndexPage(props: PageProps) {
+  console.log('IndexPage(props)', props);
+
+  const HybridHomepage = useView(View.HybridHomepage, {
+    communityScopes: null,
+    mainCta: null,
+    githubStars: 1,
+    onBookMeeting: () => alert('TODO not implemented.')
+  });
+
+  return <Layout>{HybridHomepage}</Layout>;
 }
 
 export const getStaticProps: GetStaticProps = async () => {

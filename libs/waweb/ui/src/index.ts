@@ -1,5 +1,6 @@
-import dynamic from 'next/dynamic';
+export type { Components, MergeComponents, UiProviderProps } from './components';
+export { useComponents, useView, UiProvider, View } from './components';
 
-export const HomeView = dynamic(() => import('./waweb.views/hybrid-homepage'));
-export const BlogView = dynamic(() => import('./waweb.views/support'));
-export const ExpoView = dynamic(() => import('./waweb.views/enterprise-offering'));
+// export { MDXLayout as MdxLayout } from './components/docs.markdown/mdx';
+// export { Markdown as MdLayout } from './components/docs.markdown/md';
+// export { Theme } from './components/base-ui.theme/theme-provider';

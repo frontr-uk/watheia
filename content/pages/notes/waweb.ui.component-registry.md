@@ -7,8 +7,8 @@ title: Component Registry
 
 - base-ui.theme/theme-provider
 - base-ui.layout/page-frame
-- base-ui.text/heading
-- base-ui.text/paragraph
+- base-ui.elements/heading
+- base-ui.elements/paragraph
 - base-ui.text/separator
 
 ## waweb

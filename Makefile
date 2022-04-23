@@ -17,7 +17,7 @@ clean:
 	yarn cache clean
 
 analyze:
-	ANALYZE=true nx build home --verbose
+	ANALYZE=true nx build home --verbose --skip-nx-cache
 
 # Install a few libs into node modules so the can be found
 # using standard nodejs require

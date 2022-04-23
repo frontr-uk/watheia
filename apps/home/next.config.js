@@ -54,7 +54,8 @@ const withTM = transpiler([
   '@react-spectrum/view',
   '@react-spectrum/well',
   '@spectrum-icons/ui',
-  '@spectrum-icons/workflow'
+  '@spectrum-icons/workflow',
+  'react-syntax-highlighter'
 ]);
 
 const GATEKEEPER_URL = process.env['GATEKEEPER_URL'] ?? 'http://localhost:4200';

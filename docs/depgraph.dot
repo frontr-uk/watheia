@@ -858,15 +858,15 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/base-ui.surfaces/split-pane/splitter/splitter.tsx" -> "libs/waweb/ui/src/base-ui.surfaces/split-pane/splitter/splitter.module.scss"
     "libs/waweb/ui/src/base-ui.surfaces/split-pane/splitter/splitter.tsx" -> "node_modules/clsx" [penwidth="1.0"]
     "libs/waweb/ui/src/base-ui.surfaces/split-pane/splitter/splitter.tsx" -> "node_modules/react" [penwidth="1.0"]
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.text/heading" {label="heading" "libs/waweb/ui/src/base-ui.text/heading/heading.docs.mdx" [label=<heading.docs.mdx> tooltip="no-orphans" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.text/heading/heading.docs.mdx" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } } } }
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.text/heading" {label="heading" "libs/waweb/ui/src/base-ui.text/heading/heading.spec.tsx" [label=<heading.spec.tsx> tooltip="heading.spec.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.text/heading/heading.spec.tsx" fillcolor="#bbfeff"] } } } } } }
-    "libs/waweb/ui/src/base-ui.text/heading/heading.spec.tsx" -> "./heading.composition" [xlabel="not-to-unresolvable" tooltip="not-to-unresolvable" fontcolor="red" color="red"]
-    "libs/waweb/ui/src/base-ui.text/heading/heading.spec.tsx" -> "node_modules/@testing-library" [penwidth="1.0"]
-    "libs/waweb/ui/src/base-ui.text/heading/heading.spec.tsx" -> "node_modules/react" [penwidth="1.0"]
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.text/heading" {label="heading" "libs/waweb/ui/src/base-ui.text/heading/heading.tsx" [label=<heading.tsx> tooltip="heading.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.text/heading/heading.tsx" fillcolor="#bbfeff"] } } } } } }
-    "libs/waweb/ui/src/base-ui.text/heading/heading.tsx" -> "node_modules/react" [penwidth="1.0"]
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.text/heading" {label="heading" "libs/waweb/ui/src/base-ui.text/heading/index.ts" [label=<index.ts> tooltip="index.ts" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.text/heading/index.ts" fillcolor="#ddfeff"] } } } } } }
-    "libs/waweb/ui/src/base-ui.text/heading/index.ts" -> "libs/waweb/ui/src/base-ui.text/heading/heading.tsx"
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.elements/heading" {label="heading" "libs/waweb/ui/src/base-ui.elements/heading/heading.docs.mdx" [label=<heading.docs.mdx> tooltip="no-orphans" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.elements/heading/heading.docs.mdx" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } } } }
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.elements/heading" {label="heading" "libs/waweb/ui/src/base-ui.elements/heading/heading.spec.tsx" [label=<heading.spec.tsx> tooltip="heading.spec.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.elements/heading/heading.spec.tsx" fillcolor="#bbfeff"] } } } } } }
+    "libs/waweb/ui/src/base-ui.elements/heading/heading.spec.tsx" -> "./heading.composition" [xlabel="not-to-unresolvable" tooltip="not-to-unresolvable" fontcolor="red" color="red"]
+    "libs/waweb/ui/src/base-ui.elements/heading/heading.spec.tsx" -> "node_modules/@testing-library" [penwidth="1.0"]
+    "libs/waweb/ui/src/base-ui.elements/heading/heading.spec.tsx" -> "node_modules/react" [penwidth="1.0"]
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.elements/heading" {label="heading" "libs/waweb/ui/src/base-ui.elements/heading/heading.tsx" [label=<heading.tsx> tooltip="heading.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.elements/heading/heading.tsx" fillcolor="#bbfeff"] } } } } } }
+    "libs/waweb/ui/src/base-ui.elements/heading/heading.tsx" -> "node_modules/react" [penwidth="1.0"]
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.elements/heading" {label="heading" "libs/waweb/ui/src/base-ui.elements/heading/index.ts" [label=<index.ts> tooltip="index.ts" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.elements/heading/index.ts" fillcolor="#ddfeff"] } } } } } }
+    "libs/waweb/ui/src/base-ui.elements/heading/index.ts" -> "libs/waweb/ui/src/base-ui.elements/heading/heading.tsx"
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.text/muted-text" {label="muted-text" "libs/waweb/ui/src/base-ui.text/muted-text/index.ts" [label=<index.ts> tooltip="index.ts" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.text/muted-text/index.ts" fillcolor="#ddfeff"] } } } } } }
     "libs/waweb/ui/src/base-ui.text/muted-text/index.ts" -> "libs/waweb/ui/src/base-ui.text/muted-text/muted-text.tsx"
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.text/muted-text" {label="muted-text" "libs/waweb/ui/src/base-ui.text/muted-text/muted-text.docs.mdx" [label=<muted-text.docs.mdx> tooltip="no-orphans" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.text/muted-text/muted-text.docs.mdx" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } } } }
@@ -879,18 +879,18 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/base-ui.text/muted-text/muted-text.tsx" -> "libs/waweb/ui/src/base-ui.text/muted-text/muted-text.module.scss"
     "libs/waweb/ui/src/base-ui.text/muted-text/muted-text.tsx" -> "node_modules/clsx" [penwidth="1.0"]
     "libs/waweb/ui/src/base-ui.text/muted-text/muted-text.tsx" -> "node_modules/react" [penwidth="1.0"]
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.text/paragraph" {label="paragraph" "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx" [label=<index.tsx> tooltip="index.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.text/paragraph/index.tsx" fillcolor="#bbfeff"] } } } } } }
-    "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/paragraph.tsx"
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.text/paragraph" {label="paragraph" "libs/waweb/ui/src/base-ui.text/paragraph/paragraph.docs.mdx" [label=<paragraph.docs.mdx> tooltip="no-orphans" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.text/paragraph/paragraph.docs.mdx" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } } } }
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.text/paragraph" {label="paragraph" "libs/waweb/ui/src/base-ui.text/paragraph/paragraph.spec.tsx" [label=<paragraph.spec.tsx> tooltip="paragraph.spec.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.text/paragraph/paragraph.spec.tsx" fillcolor="#bbfeff"] } } } } } }
-    "libs/waweb/ui/src/base-ui.text/paragraph/paragraph.spec.tsx" -> "./paragraph.composition" [xlabel="not-to-unresolvable" tooltip="not-to-unresolvable" fontcolor="red" color="red"]
-    "libs/waweb/ui/src/base-ui.text/paragraph/paragraph.spec.tsx" -> "node_modules/@testing-library" [penwidth="1.0"]
-    "libs/waweb/ui/src/base-ui.text/paragraph/paragraph.spec.tsx" -> "node_modules/react" [penwidth="1.0"]
-    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.text/paragraph" {label="paragraph" "libs/waweb/ui/src/base-ui.text/paragraph/paragraph.tsx" [label=<paragraph.tsx> tooltip="paragraph.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.text/paragraph/paragraph.tsx" fillcolor="#bbfeff"] } } } } } }
-    "libs/waweb/ui/src/base-ui.text/paragraph/paragraph.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
-    "libs/waweb/ui/src/base-ui.text/paragraph/paragraph.tsx" -> "libs/waweb/ui/src/base-ui.text/text-sizes/index.ts"
-    "libs/waweb/ui/src/base-ui.text/paragraph/paragraph.tsx" -> "node_modules/clsx" [penwidth="1.0"]
-    "libs/waweb/ui/src/base-ui.text/paragraph/paragraph.tsx" -> "node_modules/react" [penwidth="1.0"]
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.elements/paragraph" {label="paragraph" "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx" [label=<index.tsx> tooltip="index.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx" fillcolor="#bbfeff"] } } } } } }
+    "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/paragraph.tsx"
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.elements/paragraph" {label="paragraph" "libs/waweb/ui/src/base-ui.elements/paragraph/paragraph.docs.mdx" [label=<paragraph.docs.mdx> tooltip="no-orphans" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.elements/paragraph/paragraph.docs.mdx" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } } } }
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.elements/paragraph" {label="paragraph" "libs/waweb/ui/src/base-ui.elements/paragraph/paragraph.spec.tsx" [label=<paragraph.spec.tsx> tooltip="paragraph.spec.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.elements/paragraph/paragraph.spec.tsx" fillcolor="#bbfeff"] } } } } } }
+    "libs/waweb/ui/src/base-ui.elements/paragraph/paragraph.spec.tsx" -> "./paragraph.composition" [xlabel="not-to-unresolvable" tooltip="not-to-unresolvable" fontcolor="red" color="red"]
+    "libs/waweb/ui/src/base-ui.elements/paragraph/paragraph.spec.tsx" -> "node_modules/@testing-library" [penwidth="1.0"]
+    "libs/waweb/ui/src/base-ui.elements/paragraph/paragraph.spec.tsx" -> "node_modules/react" [penwidth="1.0"]
+    subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.elements/paragraph" {label="paragraph" "libs/waweb/ui/src/base-ui.elements/paragraph/paragraph.tsx" [label=<paragraph.tsx> tooltip="paragraph.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.elements/paragraph/paragraph.tsx" fillcolor="#bbfeff"] } } } } } }
+    "libs/waweb/ui/src/base-ui.elements/paragraph/paragraph.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
+    "libs/waweb/ui/src/base-ui.elements/paragraph/paragraph.tsx" -> "libs/waweb/ui/src/base-ui.text/text-sizes/index.ts"
+    "libs/waweb/ui/src/base-ui.elements/paragraph/paragraph.tsx" -> "node_modules/clsx" [penwidth="1.0"]
+    "libs/waweb/ui/src/base-ui.elements/paragraph/paragraph.tsx" -> "node_modules/react" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.text/text-separator" {label="text-separator" "libs/waweb/ui/src/base-ui.text/text-separator/index.ts" [label=<index.ts> tooltip="index.ts" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.text/text-separator/index.ts" fillcolor="#ddfeff"] } } } } } }
     "libs/waweb/ui/src/base-ui.text/text-separator/index.ts" -> "libs/waweb/ui/src/base-ui.text/text-separator/text-separator.tsx"
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/base-ui.text" {label="base-ui.text" subgraph "cluster_libs/waweb/ui/src/base-ui.text/text-separator" {label="text-separator" "libs/waweb/ui/src/base-ui.text/text-separator/text-separator.docs.mdx" [label=<text-separator.docs.mdx> tooltip="no-orphans" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/base-ui.text/text-separator/text-separator.docs.mdx" fillcolor="#ccffcc" fontcolor="orange" color="orange"] } } } } } }
@@ -1263,7 +1263,7 @@ strict digraph "dependency-cruiser output"{
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/docs.ui" {label="docs.ui" subgraph "cluster_libs/waweb/ui/src/docs.ui/paragraph" {label="paragraph" "libs/waweb/ui/src/docs.ui/paragraph/paragraph.docs.mdx" [label=<paragraph.docs.mdx> tooltip="paragraph.docs.mdx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/docs.ui/paragraph/paragraph.docs.mdx" fillcolor="#ccffcc"] } } } } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/docs.ui" {label="docs.ui" subgraph "cluster_libs/waweb/ui/src/docs.ui/paragraph" {label="paragraph" "libs/waweb/ui/src/docs.ui/paragraph/paragraph.module.scss" [label=<paragraph.module.scss> tooltip="paragraph.module.scss" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/docs.ui/paragraph/paragraph.module.scss" ] } } } } } }
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/docs.ui" {label="docs.ui" subgraph "cluster_libs/waweb/ui/src/docs.ui/paragraph" {label="paragraph" "libs/waweb/ui/src/docs.ui/paragraph/paragraph.tsx" [label=<paragraph.tsx> tooltip="paragraph.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/docs.ui/paragraph/paragraph.tsx" fillcolor="#bbfeff"] } } } } } }
-    "libs/waweb/ui/src/docs.ui/paragraph/paragraph.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/docs.ui/paragraph/paragraph.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/docs.ui/paragraph/paragraph.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/docs.ui/paragraph/paragraph.tsx" -> "libs/waweb/ui/src/docs.ui/paragraph/paragraph.module.scss"
     "libs/waweb/ui/src/docs.ui/paragraph/paragraph.tsx" -> "node_modules/clsx" [penwidth="1.0"]
@@ -1374,7 +1374,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.elements/heading/heading.spec.tsx" -> "node_modules/chai" [penwidth="1.0"]
     "libs/waweb/ui/src/waweb.elements/heading/heading.spec.tsx" -> "node_modules/react" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/waweb.elements" {label="waweb.elements" subgraph "cluster_libs/waweb/ui/src/waweb.elements/heading" {label="heading" "libs/waweb/ui/src/waweb.elements/heading/heading.tsx" [label=<heading.tsx> tooltip="heading.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/waweb.elements/heading/heading.tsx" fillcolor="#bbfeff"] } } } } } }
-    "libs/waweb/ui/src/waweb.elements/heading/heading.tsx" -> "libs/waweb/ui/src/base-ui.text/heading/index.ts"
+    "libs/waweb/ui/src/waweb.elements/heading/heading.tsx" -> "libs/waweb/ui/src/base-ui.elements/heading/index.ts"
     "libs/waweb/ui/src/waweb.elements/heading/heading.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.elements/heading/heading.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/heading-margins.module.scss"
     "libs/waweb/ui/src/waweb.elements/heading/heading.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/heading-sizes.module.scss"
@@ -1594,7 +1594,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.marketing/twitter-card/twitter-card.spec.tsx" -> "node_modules/react" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/waweb.marketing" {label="waweb.marketing" subgraph "cluster_libs/waweb/ui/src/waweb.marketing/twitter-card" {label="twitter-card" "libs/waweb/ui/src/waweb.marketing/twitter-card/twitter-card.tsx" [label=<twitter-card.tsx> tooltip="twitter-card.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/waweb.marketing/twitter-card/twitter-card.tsx" fillcolor="#bbfeff"] } } } } } }
     "libs/waweb/ui/src/waweb.marketing/twitter-card/twitter-card.tsx" -> "libs/waweb/ui/src/base-ui.surfaces/card/index.tsx"
-    "libs/waweb/ui/src/waweb.marketing/twitter-card/twitter-card.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.marketing/twitter-card/twitter-card.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.marketing/twitter-card/twitter-card.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.marketing/twitter-card/twitter-card.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
     "libs/waweb/ui/src/waweb.marketing/twitter-card/twitter-card.tsx" -> "libs/waweb/ui/src/waweb.elements/image/index.ts"
@@ -1613,7 +1613,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/build-together/build-together.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
     "libs/waweb/ui/src/waweb.sections/build-together/build-together.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-presets/four-way-grid/index.ts"
     "libs/waweb/ui/src/waweb.sections/build-together/build-together.tsx" -> "libs/waweb/ui/src/base-ui.layout/page-frame/index.ts"
-    "libs/waweb/ui/src/waweb.sections/build-together/build-together.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/build-together/build-together.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/build-together/build-together.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/build-together/build-together.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
     "libs/waweb/ui/src/waweb.sections/build-together/build-together.tsx" -> "libs/waweb/ui/src/waweb.elements/image/index.ts"
@@ -1647,7 +1647,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/community/community-section.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/community/community-section.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
     "libs/waweb/ui/src/waweb.sections/community/community-section.tsx" -> "libs/waweb/ui/src/base-ui.layout/page-frame/index.ts"
-    "libs/waweb/ui/src/waweb.sections/community/community-section.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/community/community-section.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/community/community-section.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/community/community-section.tsx" -> "libs/waweb/ui/src/waweb.content/links/index.ts"
     "libs/waweb/ui/src/waweb.sections/community/community-section.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
@@ -1671,7 +1671,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/component-advantages/component-advantages.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/component-advantages/component-advantages.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
     "libs/waweb/ui/src/waweb.sections/component-advantages/component-advantages.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-presets/four-way-grid/index.ts"
-    "libs/waweb/ui/src/waweb.sections/component-advantages/component-advantages.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/component-advantages/component-advantages.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/component-advantages/component-advantages.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/component-advantages/component-advantages.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
     "libs/waweb/ui/src/waweb.sections/component-advantages/component-advantages.tsx" -> "libs/waweb/ui/src/waweb.elements/image/index.ts"
@@ -1690,7 +1690,7 @@ strict digraph "dependency-cruiser output"{
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/waweb.sections" {label="waweb.sections" subgraph "cluster_libs/waweb/ui/src/waweb.sections/cta" {label="cta" "libs/waweb/ui/src/waweb.sections/cta/cta-section.tsx" [label=<cta-section.tsx> tooltip="cta-section.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/waweb.sections/cta/cta-section.tsx" fillcolor="#bbfeff"] } } } } } }
     "libs/waweb/ui/src/waweb.sections/cta/cta-section.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/cta/cta-section.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
-    "libs/waweb/ui/src/waweb.sections/cta/cta-section.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/cta/cta-section.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/cta/cta-section.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/cta/cta-section.tsx" -> "libs/waweb/ui/src/waweb.elements/button/index.tsx"
     "libs/waweb/ui/src/waweb.sections/cta/cta-section.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
@@ -1710,7 +1710,7 @@ strict digraph "dependency-cruiser output"{
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/waweb.sections" {label="waweb.sections" subgraph "cluster_libs/waweb/ui/src/waweb.sections/develop-components" {label="develop-components" "libs/waweb/ui/src/waweb.sections/develop-components/develop-components.tsx" [label=<develop-components.tsx> tooltip="develop-components.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/waweb.sections/develop-components/develop-components.tsx" fillcolor="#bbfeff"] } } } } } }
     "libs/waweb/ui/src/waweb.sections/develop-components/develop-components.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/develop-components/develop-components.tsx" -> "libs/waweb/ui/src/base-ui.layout/page-frame/index.ts"
-    "libs/waweb/ui/src/waweb.sections/develop-components/develop-components.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/develop-components/develop-components.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/develop-components/develop-components.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/develop-components/develop-components.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
     "libs/waweb/ui/src/waweb.sections/develop-components/develop-components.tsx" -> "libs/waweb/ui/src/waweb.elements/image/index.ts"
@@ -1731,7 +1731,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/discover-components/discover-components.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
     "libs/waweb/ui/src/waweb.sections/discover-components/discover-components.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-presets/z-grid/index.ts"
     "libs/waweb/ui/src/waweb.sections/discover-components/discover-components.tsx" -> "libs/waweb/ui/src/base-ui.layout/page-frame/index.ts"
-    "libs/waweb/ui/src/waweb.sections/discover-components/discover-components.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/discover-components/discover-components.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/discover-components/discover-components.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/discover-components/discover-components.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
     "libs/waweb/ui/src/waweb.sections/discover-components/discover-components.tsx" -> "libs/waweb/ui/src/waweb.elements/image/index.ts"
@@ -1753,7 +1753,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/advantage-cards/advantage-cards.tsx" -> "libs/waweb/ui/src/base-ui.layout/page-frame/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/advantage-cards/advantage-cards.tsx" -> "libs/waweb/ui/src/base-ui.surfaces/card/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/advantage-cards/advantage-cards.tsx" -> "libs/waweb/ui/src/base-ui.text/muted-text/index.ts"
-    "libs/waweb/ui/src/waweb.sections/enterprise-offering/advantage-cards/advantage-cards.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/enterprise-offering/advantage-cards/advantage-cards.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/advantage-cards/advantage-cards.tsx" -> "libs/waweb/ui/src/base-ui.text/themed-text/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/advantage-cards/advantage-cards.tsx" -> "libs/waweb/ui/src/base-ui.theme/accent-color/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/advantage-cards/advantage-cards.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
@@ -1777,7 +1777,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/component-analytics/component-analytics.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/component-analytics/component-analytics.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/component-analytics/component-analytics.tsx" -> "libs/waweb/ui/src/base-ui.text/muted-text/index.ts"
-    "libs/waweb/ui/src/waweb.sections/enterprise-offering/component-analytics/component-analytics.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/enterprise-offering/component-analytics/component-analytics.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/component-analytics/component-analytics.tsx" -> "libs/waweb/ui/src/base-ui.text/themed-text/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/component-analytics/component-analytics.tsx" -> "libs/waweb/ui/src/base-ui.theme/accent-color/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/component-analytics/component-analytics.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
@@ -1800,7 +1800,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/eco-system/eco-system.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/eco-system/eco-system.tsx" -> "libs/waweb/ui/src/base-ui.layout/page-frame/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/eco-system/eco-system.tsx" -> "libs/waweb/ui/src/base-ui.text/muted-text/index.ts"
-    "libs/waweb/ui/src/waweb.sections/enterprise-offering/eco-system/eco-system.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/enterprise-offering/eco-system/eco-system.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/eco-system/eco-system.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/eco-system/eco-system.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/eco-system/eco-system.tsx" -> "node_modules/clsx" [penwidth="1.0"]
@@ -1816,7 +1816,7 @@ strict digraph "dependency-cruiser output"{
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/waweb.sections" {label="waweb.sections" subgraph "cluster_libs/waweb/ui/src/waweb.sections/enterprise-offering" {label="enterprise-offering" subgraph "cluster_libs/waweb/ui/src/waweb.sections/enterprise-offering/enterprise-bullets" {label="enterprise-bullets" "libs/waweb/ui/src/waweb.sections/enterprise-offering/enterprise-bullets/enterprise-bullets.tsx" [label=<enterprise-bullets.tsx> tooltip="enterprise-bullets.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/waweb.sections/enterprise-offering/enterprise-bullets/enterprise-bullets.tsx" fillcolor="#bbfeff"] } } } } } } }
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/enterprise-bullets/enterprise-bullets.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/enterprise-bullets/enterprise-bullets.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
-    "libs/waweb/ui/src/waweb.sections/enterprise-offering/enterprise-bullets/enterprise-bullets.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/enterprise-offering/enterprise-bullets/enterprise-bullets.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/enterprise-bullets/enterprise-bullets.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/enterprise-bullets/enterprise-bullets.tsx" -> "libs/waweb/ui/src/waweb.elements/image/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/enterprise-bullets/enterprise-bullets.tsx" -> "libs/waweb/ui/src/waweb.sections/enterprise-offering/enterprise-bullets/enterprise-bullets.module.scss"
@@ -1835,7 +1835,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/experts-support/expert-support.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/experts-support/expert-support.tsx" -> "libs/waweb/ui/src/base-ui.surfaces/card/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/experts-support/expert-support.tsx" -> "libs/waweb/ui/src/base-ui.text/muted-text/index.ts"
-    "libs/waweb/ui/src/waweb.sections/enterprise-offering/experts-support/expert-support.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/enterprise-offering/experts-support/expert-support.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/experts-support/expert-support.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/experts-support/expert-support.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/experts-support/expert-support.tsx" -> "libs/waweb/ui/src/waweb.elements/image/index.ts"
@@ -1854,7 +1854,7 @@ strict digraph "dependency-cruiser output"{
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/waweb.sections" {label="waweb.sections" subgraph "cluster_libs/waweb/ui/src/waweb.sections/enterprise-offering" {label="enterprise-offering" subgraph "cluster_libs/waweb/ui/src/waweb.sections/enterprise-offering/hero" {label="hero" "libs/waweb/ui/src/waweb.sections/enterprise-offering/hero/hero.tsx" [label=<hero.tsx> tooltip="hero.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/waweb.sections/enterprise-offering/hero/hero.tsx" fillcolor="#bbfeff"] } } } } } } }
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
-    "libs/waweb/ui/src/waweb.sections/enterprise-offering/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/enterprise-offering/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.text/themed-text/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/hero/hero.tsx" -> "libs/waweb/ui/src/waweb.elements/button/index.tsx"
@@ -1892,7 +1892,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/powering-enterprise/powering-enterprise.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/powering-enterprise/powering-enterprise.tsx" -> "libs/waweb/ui/src/base-ui.layout/page-frame/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/powering-enterprise/powering-enterprise.tsx" -> "libs/waweb/ui/src/base-ui.text/muted-text/index.ts"
-    "libs/waweb/ui/src/waweb.sections/enterprise-offering/powering-enterprise/powering-enterprise.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/enterprise-offering/powering-enterprise/powering-enterprise.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/powering-enterprise/powering-enterprise.tsx" -> "libs/waweb/ui/src/base-ui.text/themed-text/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/powering-enterprise/powering-enterprise.tsx" -> "libs/waweb/ui/src/base-ui.theme/accent-color/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/powering-enterprise/powering-enterprise.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
@@ -1912,7 +1912,7 @@ strict digraph "dependency-cruiser output"{
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/waweb.sections" {label="waweb.sections" subgraph "cluster_libs/waweb/ui/src/waweb.sections/enterprise-offering" {label="enterprise-offering" subgraph "cluster_libs/waweb/ui/src/waweb.sections/enterprise-offering/reliability" {label="reliability" "libs/waweb/ui/src/waweb.sections/enterprise-offering/reliability/reliability.tsx" [label=<reliability.tsx> tooltip="reliability.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/waweb.sections/enterprise-offering/reliability/reliability.tsx" fillcolor="#bbfeff"] } } } } } } }
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/reliability/reliability.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/reliability/reliability.tsx" -> "libs/waweb/ui/src/base-ui.text/muted-text/index.ts"
-    "libs/waweb/ui/src/waweb.sections/enterprise-offering/reliability/reliability.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/enterprise-offering/reliability/reliability.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/reliability/reliability.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/reliability/reliability.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/reliability/reliability.tsx" -> "libs/waweb/ui/src/waweb.elements/image/index.ts"
@@ -1949,7 +1949,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/sales-cta/sales-cta.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/sales-cta/sales-cta.tsx" -> "libs/waweb/ui/src/base-ui.surfaces/card/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/sales-cta/sales-cta.tsx" -> "libs/waweb/ui/src/base-ui.text/muted-text/index.ts"
-    "libs/waweb/ui/src/waweb.sections/enterprise-offering/sales-cta/sales-cta.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/enterprise-offering/sales-cta/sales-cta.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/sales-cta/sales-cta.tsx" -> "libs/waweb/ui/src/base-ui.text/text-separator/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/sales-cta/sales-cta.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-offering/sales-cta/sales-cta.tsx" -> "libs/waweb/ui/src/waweb.elements/button/index.tsx"
@@ -1970,7 +1970,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/enterprise-section/enterprise-section.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-section/enterprise-section.tsx" -> "libs/waweb/ui/src/base-ui.layout/col-span/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-section/enterprise-section.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
-    "libs/waweb/ui/src/waweb.sections/enterprise-section/enterprise-section.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/enterprise-section/enterprise-section.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-section/enterprise-section.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/enterprise-section/enterprise-section.tsx" -> "libs/waweb/ui/src/waweb.elements/button/index.tsx"
     "libs/waweb/ui/src/waweb.sections/enterprise-section/enterprise-section.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
@@ -1993,7 +1993,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
     "libs/waweb/ui/src/waweb.sections/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.layout/page-frame/index.ts"
-    "libs/waweb/ui/src/waweb.sections/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/hero/hero.tsx" -> "libs/waweb/ui/src/waweb.elements/button/index.tsx"
     "libs/waweb/ui/src/waweb.sections/hero/hero.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
@@ -2017,7 +2017,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/independent-teams/independent-teams.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/independent-teams/independent-teams.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
     "libs/waweb/ui/src/waweb.sections/independent-teams/independent-teams.tsx" -> "libs/waweb/ui/src/base-ui.layout/page-frame/index.ts"
-    "libs/waweb/ui/src/waweb.sections/independent-teams/independent-teams.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/independent-teams/independent-teams.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/independent-teams/independent-teams.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/independent-teams/independent-teams.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
     "libs/waweb/ui/src/waweb.sections/independent-teams/independent-teams.tsx" -> "libs/waweb/ui/src/waweb.elements/image/index.ts"
@@ -2040,7 +2040,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/reuse-components/reuse-components.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
     "libs/waweb/ui/src/waweb.sections/reuse-components/reuse-components.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-presets/four-way-grid/index.ts"
     "libs/waweb/ui/src/waweb.sections/reuse-components/reuse-components.tsx" -> "libs/waweb/ui/src/base-ui.layout/page-frame/index.ts"
-    "libs/waweb/ui/src/waweb.sections/reuse-components/reuse-components.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/reuse-components/reuse-components.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/reuse-components/reuse-components.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/reuse-components/reuse-components.tsx" -> "libs/waweb/ui/src/waweb.content/links/index.ts"
     "libs/waweb/ui/src/waweb.sections/reuse-components/reuse-components.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
@@ -2059,7 +2059,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/support-page/global-enterprise/global-enterprise.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/support-page/global-enterprise/global-enterprise.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
     "libs/waweb/ui/src/waweb.sections/support-page/global-enterprise/global-enterprise.tsx" -> "libs/waweb/ui/src/base-ui.surfaces/card/index.tsx"
-    "libs/waweb/ui/src/waweb.sections/support-page/global-enterprise/global-enterprise.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/support-page/global-enterprise/global-enterprise.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/support-page/global-enterprise/global-enterprise.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/support-page/global-enterprise/global-enterprise.tsx" -> "libs/waweb/ui/src/waweb.elements/button/index.tsx"
     "libs/waweb/ui/src/waweb.sections/support-page/global-enterprise/global-enterprise.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
@@ -2081,7 +2081,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/support-page/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/support-page/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
     "libs/waweb/ui/src/waweb.sections/support-page/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.text/muted-text/index.ts"
-    "libs/waweb/ui/src/waweb.sections/support-page/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/support-page/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/support-page/hero/hero.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/support-page/hero/hero.tsx" -> "libs/waweb/ui/src/waweb.elements/button/index.tsx"
     "libs/waweb/ui/src/waweb.sections/support-page/hero/hero.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
@@ -2116,7 +2116,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/support-page/support-channels/support-channels.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/support-page/support-channels/support-channels.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
     "libs/waweb/ui/src/waweb.sections/support-page/support-channels/support-channels.tsx" -> "libs/waweb/ui/src/base-ui.text/muted-text/index.ts"
-    "libs/waweb/ui/src/waweb.sections/support-page/support-channels/support-channels.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/support-page/support-channels/support-channels.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/support-page/support-channels/support-channels.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/support-page/support-channels/support-channels.tsx" -> "libs/waweb/ui/src/waweb.content/links/index.ts"
     "libs/waweb/ui/src/waweb.sections/support-page/support-channels/support-channels.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
@@ -2141,7 +2141,7 @@ strict digraph "dependency-cruiser output"{
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/waweb.sections" {label="waweb.sections" subgraph "cluster_libs/waweb/ui/src/waweb.sections/support-page" {label="support-page" subgraph "cluster_libs/waweb/ui/src/waweb.sections/support-page/support-cta" {label="support-cta" "libs/waweb/ui/src/waweb.sections/support-page/support-cta/support-cta.tsx" [label=<support-cta.tsx> tooltip="support-cta.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/waweb.sections/support-page/support-cta/support-cta.tsx" fillcolor="#bbfeff"] } } } } } } }
     "libs/waweb/ui/src/waweb.sections/support-page/support-cta/support-cta.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
     "libs/waweb/ui/src/waweb.sections/support-page/support-cta/support-cta.tsx" -> "libs/waweb/ui/src/base-ui.layout/grid-component/index.ts"
-    "libs/waweb/ui/src/waweb.sections/support-page/support-cta/support-cta.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/support-page/support-cta/support-cta.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/support-page/support-cta/support-cta.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/support-page/support-cta/support-cta.tsx" -> "libs/waweb/ui/src/waweb.elements/button/index.tsx"
     "libs/waweb/ui/src/waweb.sections/support-page/support-cta/support-cta.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
@@ -2198,7 +2198,7 @@ strict digraph "dependency-cruiser output"{
     "libs/waweb/ui/src/waweb.sections/talk-to-experts/talk-to-experts.spec.tsx" -> "node_modules/react" [penwidth="1.0"]
     subgraph "cluster_libs" {label="libs" subgraph "cluster_libs/waweb" {label="waweb" subgraph "cluster_libs/waweb/ui" {label="ui" subgraph "cluster_libs/waweb/ui/src" {label="src" subgraph "cluster_libs/waweb/ui/src/waweb.sections" {label="waweb.sections" subgraph "cluster_libs/waweb/ui/src/waweb.sections/talk-to-experts" {label="talk-to-experts" "libs/waweb/ui/src/waweb.sections/talk-to-experts/talk-to-experts.tsx" [label=<talk-to-experts.tsx> tooltip="talk-to-experts.tsx" URL="https://github.com/drkstr101/waweb2/blob/main/libs/waweb/ui/src/waweb.sections/talk-to-experts/talk-to-experts.tsx" fillcolor="#bbfeff"] } } } } } }
     "libs/waweb/ui/src/waweb.sections/talk-to-experts/talk-to-experts.tsx" -> "libs/waweb/ui/src/base-ui.layout/align/index.ts"
-    "libs/waweb/ui/src/waweb.sections/talk-to-experts/talk-to-experts.tsx" -> "libs/waweb/ui/src/base-ui.text/paragraph/index.tsx"
+    "libs/waweb/ui/src/waweb.sections/talk-to-experts/talk-to-experts.tsx" -> "libs/waweb/ui/src/base-ui.elements/paragraph/index.tsx"
     "libs/waweb/ui/src/waweb.sections/talk-to-experts/talk-to-experts.tsx" -> "libs/waweb/ui/src/base-ui.theme/sizes/index.ts"
     "libs/waweb/ui/src/waweb.sections/talk-to-experts/talk-to-experts.tsx" -> "libs/waweb/ui/src/waweb.elements/button/index.tsx"
     "libs/waweb/ui/src/waweb.sections/talk-to-experts/talk-to-experts.tsx" -> "libs/waweb/ui/src/waweb.elements/heading/index.tsx"
