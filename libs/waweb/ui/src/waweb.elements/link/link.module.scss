@@ -1,7 +1,7 @@
 .primaryLink {
-	color: var(--bit-accent-color, #6c5ce7);
-	
-	&:hover {
-		color: var(--bit-accent-heavy, #5d4aec);
-	}
+  color: var(--wa-accent-color, #6c5ce7);
+
+  &:hover {
+    color: var(--wa-accent-heavy, #5d4aec);
+  }
 }

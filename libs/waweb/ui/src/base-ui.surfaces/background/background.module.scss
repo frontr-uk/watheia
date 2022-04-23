@@ -1,26 +1,26 @@
 .bedrock {
-  background: var(--bit-bg-bedrock, #ffffff);
+  background: var(--wa-bg-bedrock, #ffffff);
 }
 
 .base {
-  background: var(--bit-bg-color, #ffffff);
+  background: var(--wa-bg-color, #ffffff);
 }
 
 .layer {
-  background: var(--bit-bg-color, #ffffff);
+  background: var(--wa-bg-color, #ffffff);
 }
 
 .crust {
-  background: var(--bit-bg-tooltip, #ffffff);
+  background: var(--wa-bg-tooltip, #ffffff);
 }
 
 .topping {
-  background: var(--bit-bg-color, #ffffff);
+  background: var(--wa-bg-color, #ffffff);
   &:hover {
-    background: var(--bit-bg-heavy, #f6f6f6);
+    background: var(--wa-bg-heavy, #f6f6f6);
   }
 }
 
 .dent {
-  background: var(--bit-bg-dent, #f6f6f6);
+  background: var(--wa-bg-dent, #f6f6f6);
 }

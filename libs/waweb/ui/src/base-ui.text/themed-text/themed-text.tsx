@@ -8,7 +8,7 @@ export type ThemedTextProps = HTMLAttributes<HTMLSpanElement>;
  * Text colored with the current base color.
  *
  * using css variable:
- * -   --bit-accent-color
+ * -   --wa-accent-color
  * @name ThemedText
  */
 export function ThemedText(props: ThemedTextProps) {

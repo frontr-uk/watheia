@@ -5,57 +5,55 @@
  */
 
 .primaryPalette {
-	color: $d50;
-	--bit-text-color: #{$d50};
-	--bit-text-color-heavy: #{$d60};
-	--bit-text-color-light: #{$d40};
-	--bit-text-inactive: #{$d20};
-	--bit-text-inactive-heavy: #{$d30};
+  color: $d50;
+  --wa-text-color: #{$d50};
+  --wa-text-color-heavy: #{$d60};
+  --wa-text-color-light: #{$d40};
+  --wa-text-inactive: #{$d20};
+  --wa-text-inactive-heavy: #{$d30};
 
-	--bit-border-color: #{$d20};
-	--bit-border-color-heavy: #{$d30};
-	--bit-border-color-light: #{$d15};
-	--bit-border-color-lightest: #{$d10};
+  --wa-border-color: #{$d20};
+  --wa-border-color-heavy: #{$d30};
+  --wa-border-color-light: #{$d15};
+  --wa-border-color-lightest: #{$d10};
 
-	// -- accent -- //
-	--bit-accent-color: #{$p50};
-	--bit-accent-heavy: #{$p60};
-	--bit-accent-light: #{$p40};
-	--bit-accent-text: #{$p50};
-	--bit-accent-text-heavy: #{$p60};
-	--bit-text-on-accent: #{$w10};
-	--bit-accent-bg: #{$p20};
-	--bit-accent-bg-heavy: #{$p30};
+  // -- accent -- //
+  --wa-accent-color: #{$p50};
+  --wa-accent-heavy: #{$p60};
+  --wa-accent-light: #{$p40};
+  --wa-accent-text: #{$p50};
+  --wa-accent-text-heavy: #{$p60};
+  --wa-text-on-accent: #{$w10};
+  --wa-accent-bg: #{$p20};
+  --wa-accent-bg-heavy: #{$p30};
 
-	// -- background -- //
-	// // higher number = more important, and 'closer' to the user.
-	// --bit-bg-01: #{$w10};
-	// --bit-bg-03: #{$w20};
-	// --bit-bg-05: #{$d10};
-	// --bit-bg-07: #{$d15};
-	// --bit-bg-09: #{$d20};
-	// --bit-bg-11: #{$d30};
+  // -- background -- //
+  // // higher number = more important, and 'closer' to the user.
+  // --wa-bg-01: #{$w10};
+  // --wa-bg-03: #{$w20};
+  // --wa-bg-05: #{$d10};
+  // --wa-bg-07: #{$d15};
+  // --wa-bg-09: #{$d20};
+  // --wa-bg-11: #{$d30};
 
-	// intractable item
-	--bit-bg-color: #{$w10};	// when resting
-	--bit-bg-heavy: #{$w20};	// when hovering, focus
-	--bit-bg-heaviest: #{$d10}; // when active (clicked)
+  // intractable item
+  --wa-bg-color: #{$w10}; // when resting
+  --wa-bg-heavy: #{$w20}; // when hovering, focus
+  --wa-bg-heaviest: #{$d10}; // when active (clicked)
 
-	--bit-bg-bedrock: #{$w10}; // i.e. <body/> background
-	--bit-bg-navigation: #{$w20}; // i.e. <body/> background
-	--bit-bg-overlay: #{$w10}; // e.g. button, input, etc
-	--bit-bg-modal: #{$w10}; // e.g. button, input, etc
-	--bit-bg-tooltip: #{$w10}; // e.g. button, input, etc
-	--bit-bg-tooltip-heavy: #{$w20};
-	--bit-bg-dent: #{$w20};
+  --wa-bg-bedrock: #{$w10}; // i.e. <body/> background
+  --wa-bg-navigation: #{$w20}; // i.e. <body/> background
+  --wa-bg-overlay: #{$w10}; // e.g. button, input, etc
+  --wa-bg-modal: #{$w10}; // e.g. button, input, etc
+  --wa-bg-tooltip: #{$w10}; // e.g. button, input, etc
+  --wa-bg-tooltip-heavy: #{$w20};
+  --wa-bg-dent: #{$w20};
 
-	// -- error -- //
-	// might replace with 'error' theme
-	--bit-error-color: #{$r50};
-	--bit-error-heavy: #{$r60};
-	--bit-error-light: #{$r40};
-	--bit-error-bg: #{$r20};
-	--bit-error-bg-heavy: #{$r30};
-
-
+  // -- error -- //
+  // might replace with 'error' theme
+  --wa-error-color: #{$r50};
+  --wa-error-heavy: #{$r60};
+  --wa-error-light: #{$r40};
+  --wa-error-bg: #{$r20};
+  --wa-error-bg-heavy: #{$r30};
 }

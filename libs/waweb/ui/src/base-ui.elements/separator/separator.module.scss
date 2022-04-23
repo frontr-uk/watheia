@@ -1,5 +1,5 @@
 .separator {
-  border-bottom: 1px solid var(--bit-border-color-lightest, #ededed);
+  border-bottom: 1px solid var(--wa-border-color-lightest, #ededed);
   width: 100%;
 }
 
@@ -7,5 +7,5 @@
   width: 1px;
   height: 100%;
   border-bottom-width: 0px;
-  border-right: 1px solid var(--bit-border-color-lightest, #ededed);
+  border-right: 1px solid var(--wa-border-color-lightest, #ededed);
 }

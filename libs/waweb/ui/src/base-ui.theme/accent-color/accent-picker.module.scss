@@ -1,67 +1,69 @@
 .themeExample {
-	padding: 8px;
-	border-radius: 4px;
-	width: 200px;
-	border: 1px solid var(--bit-border-color);
-	
-	* { 
-		transition: 80ms;
-	}
+  padding: 8px;
+  border-radius: 4px;
+  width: 200px;
+  border: 1px solid var(--wa-border-color);
+
+  * {
+    transition: 80ms;
+  }
 }
 
 .bg {
-	background: var(--bit-accent-bg);
-	padding: 4px;
-	border-radius: 4px;
+  background: var(--wa-accent-bg);
+  padding: 4px;
+  border-radius: 4px;
 
-	border: 1px solid var(--bit-accent-color);
+  border: 1px solid var(--wa-accent-color);
 
-	&:hover {
-		background: var(--bit-accent-bg-heavy);
-		border-color: var(--bit-accent-heavy);
-		
-		.accentText {
-			color: var(--bit-accent-text-heavy);
-		}
-	}
-	
-	&:active, &:hover:active {
-		box-shadow: 0 0 0 4px var(--bit-accent-bg);
-	}
+  &:hover {
+    background: var(--wa-accent-bg-heavy);
+    border-color: var(--wa-accent-heavy);
+
+    .accentText {
+      color: var(--wa-accent-text-heavy);
+    }
+  }
+
+  &:active,
+  &:hover:active {
+    box-shadow: 0 0 0 4px var(--wa-accent-bg);
+  }
 }
 
 .accentText {
-	color: var(--bit-accent-text);
+  color: var(--wa-accent-text);
 
-	&:hover {
-		color: var(--bit-accent-text-heavy);
-	}
+  &:hover {
+    color: var(--wa-accent-text-heavy);
+  }
 }
 
 .btn {
-	background: var(--bit-accent-color);
-	color: var(--bit-text-on-accent);
+  background: var(--wa-accent-color);
+  color: var(--wa-text-on-accent);
 
-	&:hover {
-		background: var(--bit-accent-heavy);
-	}
+  &:hover {
+    background: var(--wa-accent-heavy);
+  }
 }
 
 .shadowed {
-	border: 2px solid transparent;
-	box-shadow: 0 0 0 4px var(--bit-accent-bg);
-	padding: 4px;
-	border-radius: 4px;
-	
-	&:hover {
-		// background: var(--bit-accent-bg-heavy);
-		border-color: var(--bit-accent-color);
-		// box-shadow: 0 0 0 4px var(--bit-accent-bg);
-	}
-	
-	&:active, &:hover:active {
-		background: var(--bit-accent-bg-heavy);
-		border-color: var(--bit-accent-heavy);
-		box-shadow: 0 0 0 4px var(--bit-accent-bg);
-	}
+  border: 2px solid transparent;
+  box-shadow: 0 0 0 4px var(--wa-accent-bg);
+  padding: 4px;
+  border-radius: 4px;
+
+  &:hover {
+    // background: var(--wa-accent-bg-heavy);
+    border-color: var(--wa-accent-color);
+    // box-shadow: 0 0 0 4px var(--wa-accent-bg);
+  }
+
+  &:active,
+  &:hover:active {
+    background: var(--wa-accent-bg-heavy);
+    border-color: var(--wa-accent-heavy);
+    box-shadow: 0 0 0 4px var(--wa-accent-bg);
+  }
 }

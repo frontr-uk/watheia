@@ -44,12 +44,12 @@
 
   font-size: 11px;
   font-family: Roboto mono;
-  color: var(--bit-error-color);
-  background-color: var(--bit-bg-color);
+  color: var(--wa-error-color);
+  background-color: var(--wa-bg-color);
 
   margin: 0; // reset browser default css
   box-sizing: border-box;
-  border: 1px solid var(--bit-error-color);
+  border: 1px solid var(--wa-error-color);
   padding: 8px;
 
   transition: all 1000ms ease-in-out;
@@ -88,7 +88,7 @@
   flex-shrink: 1 !important; // fixes border overflowing from split pane
 
   box-sizing: border-box;
-  border: 1px solid var(--bit-border-color-lightest);
+  border: 1px solid var(--wa-border-color-lightest);
 
   // prevent leakage:
   overflow: auto;

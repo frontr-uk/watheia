@@ -2,64 +2,64 @@ import React from 'react';
 import { primaryPalette } from './index';
 
 const colors = [
-	'--bit-text-color',
-	'--bit-text-color-heavy',
-	'--bit-text-color-light',
-	'--bit-text-inactive',
-	'--bit-border-color',
-	'--bit-border-color-heavy',
-	'--bit-border-color-light',
-	'--bit-border-color-lightest',
-	'--bit-accent-color',
-	'--bit-accent-heavy',
-	'--bit-accent-light',
-	'--bit-accent-text',
-	'--bit-accent-text-heavy',
-	'--bit-text-on-accent',
-	'--bit-accent-bg',
-	'--bit-accent-bg-heavy',
-	'--bit-bg-color',
-	'--bit-bg-heavy',
-	'--bit-bg-heaviest',
-	'--bit-bg-heaviest',
-	'--bit-bg-bedrock',
-	'--bit-bg-navigation',
-	'--bit-bg-overlay',
-	'--bit-bg-modal',
-	'--bit-bg-tooltip',
-	'--bit-bg-tooltip-heavy',
-	'--bit-bg-dent',
-	'--bit-error-color',
-	'--bit-error-heavy',
-	'--bit-error-light',
-	'--bit-error-bg',
-	'--bit-error-bg-heavy',
+  '--wa-text-color',
+  '--wa-text-color-heavy',
+  '--wa-text-color-light',
+  '--wa-text-inactive',
+  '--wa-border-color',
+  '--wa-border-color-heavy',
+  '--wa-border-color-light',
+  '--wa-border-color-lightest',
+  '--wa-accent-color',
+  '--wa-accent-heavy',
+  '--wa-accent-light',
+  '--wa-accent-text',
+  '--wa-accent-text-heavy',
+  '--wa-text-on-accent',
+  '--wa-accent-bg',
+  '--wa-accent-bg-heavy',
+  '--wa-bg-color',
+  '--wa-bg-heavy',
+  '--wa-bg-heaviest',
+  '--wa-bg-heaviest',
+  '--wa-bg-bedrock',
+  '--wa-bg-navigation',
+  '--wa-bg-overlay',
+  '--wa-bg-modal',
+  '--wa-bg-tooltip',
+  '--wa-bg-tooltip-heavy',
+  '--wa-bg-dent',
+  '--wa-error-color',
+  '--wa-error-heavy',
+  '--wa-error-light',
+  '--wa-error-bg',
+  '--wa-error-bg-heavy'
 ];
 
 export function Preview() {
-	return (
-		<div className={primaryPalette}>
-			{colors.map((x) => (
-				<ColorBox colorName={x} />
-			))}
-		</div>
-	);
+  return (
+    <div className={primaryPalette}>
+      {colors.map((x) => (
+        <ColorBox colorName={x} />
+      ))}
+    </div>
+  );
 }
 
 function ColorBox({ colorName }: { colorName: string }) {
-	return (
-		<div style={{ display: 'flex', borderRadius: 4, marginBottom: 4 }}>
-			<div
-				style={{
-					background: `var(${colorName})`,
-					width: 20,
-					height: 20,
-					borderRadius: 4,
-					marginRight: 8,
-					border: '1px solid black',
-				}}
-			></div>
-			<div>{colorName}</div>
-		</div>
-	);
+  return (
+    <div style={{ display: 'flex', borderRadius: 4, marginBottom: 4 }}>
+      <div
+        style={{
+          background: `var(${colorName})`,
+          width: 20,
+          height: 20,
+          borderRadius: 4,
+          marginRight: 8,
+          border: '1px solid black'
+        }}
+      ></div>
+      <div>{colorName}</div>
+    </div>
+  );
 }
