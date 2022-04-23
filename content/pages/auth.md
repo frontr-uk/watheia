@@ -4,6 +4,7 @@ seo:
   metaDescription: null
   socialImage: null
   metaTags: []
+layout: PageLayout
 title: Login
 sections:
   - elementId: ''
@@ -42,5 +43,4 @@ sections:
           isRequired: 'false'
           width: full
       submitLabel: Send Message
-layout: PageLayout
 ---

@@ -9,9 +9,11 @@
     "clsx",
     "daisyui",
     "depgraph",
+    "Formik",
     "heroicons",
     "nprogress",
     "preact",
+    "vercel",
     "watheia",
     "waweb"
   ]
