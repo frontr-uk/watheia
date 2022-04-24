@@ -6,7 +6,7 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next';
 type PageProps = InferGetStaticPropsType<typeof getStaticProps>;
 
 export function IndexPage(props: PageProps) {
-  console.log('IndexPage(props)', props);
+  // console.log('IndexPage(props)', props);
 
   const HybridHomepage = useView(View.HybridHomepage, {
     communityScopes: null,

@@ -1,5 +1,4 @@
 import { createContext, createElement, useContext, useMemo } from 'react';
-import { View, views } from './registry';
 import { Components, MergeComponents, UiProviderProps } from './types';
 
 // export type Components<T> = Record<string, ComponentType<T>>;
@@ -28,11 +27,6 @@ export function useComponents(components: Components | MergeComponents): Compone
 
     return { ...contextComponents, ...components };
   }, [contextComponents, components]);
-}
-
-export function useView<P>(view: View, props: P) {
-  const View = views[view];
-  return createElement(View, props);
 }
 
 /**

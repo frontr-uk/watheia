@@ -24,7 +24,7 @@
       "@watheia/waweb.message": ["libs/waweb/message/src/index.ts"],
       "@watheia/waweb.ui": ["libs/waweb/ui/src/index.ts"],
       "@watheia/base-ui.theme.styles.commons": [
-        "libs/waweb/ui/src/components/base-ui.theme/styles/commons/index.css"
+        "libs/waweb/ui/src/lib/base-ui.theme/styles/commons/index.css"
       ]
     }
   },
