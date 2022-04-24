@@ -1,11 +1,4 @@
-import React, {
-  ComponentType,
-  createContext,
-  createElement,
-  HtmlHTMLAttributes,
-  useContext,
-  useMemo
-} from 'react';
+import { createContext, createElement, useContext, useMemo } from 'react';
 import { View, views } from './registry';
 import { Components, MergeComponents, UiProviderProps } from './types';
 
