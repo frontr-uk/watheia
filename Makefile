@@ -62,7 +62,7 @@ depcruise:
 	depcruise . \
 		--config .dependency-cruiser.js  \
 		--output-type dot \
-		--output-to docs/depgraph.dot --prefix "https://github.com/drkstr101/waweb2/blob/main/"
+		--output-to docs/depgraph.dot --prefix "https://github.com/drkstr101/watheia/blob/main/"
 # cat docs/depgraph.dot | dot -T svg > docs/depgraph.svg.tmp
 # mv docs/depgraph.svg.tmp docs/depgraph.svg
 

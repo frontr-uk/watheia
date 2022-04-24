@@ -11,7 +11,7 @@ exports[`IndexPage should render successfully 1`] = `
     xmlns="http://www.w3.org/2000/svg"
   >
     <a
-      href="https://github.com/drkstr101/waweb2"
+      href="https://github.com/drkstr101/watheia"
       rel="noopener noreferrer"
       target="_blank"
       title="View Source"
